@@ -22,3 +22,13 @@ Keyword Spotting (KWS) — training/feature-extraction notebook and the Arduino 
 | [`Lab5/Lab5_KWS_Answers.pdf`](Lab5/Lab5_KWS_Answers.pdf) | Written answers to the lab questions, including the Serial Monitor screenshot showing correct "yes"/"no" detection on the Nano 33 BLE Sense. |
 
 **Authorship:** All Lab 5 work — running every notebook cell, deploying the model to the Arduino Nano 33 BLE Sense, and writing the answer document — was completed by Luke Valerio. Claude (an AI assistant) was used only to commit these files to the repository.
+
+## Assignment 1
+
+EE 446 Homework 1 — DNN and Wine classification with model-compression techniques (quantization, pruning, knowledge distillation).
+
+| File | Description |
+|------|-------------|
+| [`Assignment1/Luke_Valerio_EE446_HW1_Pro.ipynb`](Assignment1/Luke_Valerio_EE446_HW1_Pro.ipynb) | Completed [Pro] programming notebook for Problem 1: baseline DNN, dynamic-range/INT8/float16 quantization, pruning, output-based knowledge distillation, and a combined KD+INT8 model — each reporting TFLite size and classification performance. |
+
+*The discussion answers ([Dis], including Problem 2) are submitted as `Luke_Valerio_EE446_HW1_Dis.pdf` (added separately).*
