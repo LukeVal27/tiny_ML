@@ -29,6 +29,5 @@ EE 446 Homework 1 — DNN and Wine classification with model-compression techniq
 
 | File | Description |
 |------|-------------|
-| [`Assignment1/Luke_Valerio_EE446_HW1_Pro.ipynb`](Assignment1/Luke_Valerio_EE446_HW1_Pro.ipynb) | Completed [Pro] programming notebook for Problem 1: baseline DNN, dynamic-range/INT8/float16 quantization, pruning, output-based knowledge distillation, and a combined KD+INT8 model — each reporting TFLite size and classification performance. |
-
-*The discussion answers ([Dis], including Problem 2) are submitted as `Luke_Valerio_EE446_HW1_Dis.pdf` (added separately).*
+| [`Assignment1/Luke_Valerio_EE446_HW1_Pro.ipynb`](Assignment1/Luke_Valerio_EE446_HW1_Pro.ipynb) | Completed [Pro] programming notebook for Problem 1: baseline DNN, dynamic-range/INT8/float16 quantization, pruning, output-based knowledge distillation, and a combined KD+INT8 model, each reporting TFLite size and classification performance. |
+| [`Assignment1/Luke_Valerio_EE446_HW1_Dis.pdf`](Assignment1/Luke_Valerio_EE446_HW1_Dis.pdf) | Answers to the [Dis] discussion questions: Problem 1(e) analysis and all four Problem 2 (Edge Impulse) questions. |
