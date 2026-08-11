@@ -72,9 +72,15 @@ To rebuild the sketch:
 arduino-cli compile --fqbn arduino:mbed_nano:nano33ble Tiny_Ensemble_Learning
 ```
 
+## Deployment result
+
+With the board lying flat and still, the three branches disagree sharply. The raw branch reports jump front and back at 0.9727, the standard-scaled branch reports climbing stairs at 0.7187, and the min-max branch reports lying down at 0.9805. The stacked meta-classifier nonetheless returns sitting and relaxing at 0.5195, placing 0.9609 of its probability mass on the three stationary classes.
+
+The final answer is reasonable for a resting board, but it is reached from branch inputs unlike anything the meta-classifier saw in training, and the confidence of 0.5195 suggests it is closer to undecided than to confident. Predictions are highly stable across windows, varying only in the third decimal place, so the error is systematic rather than noisy.
+
 ## Known limitation
 
-The Part II models are trained on one subject's chest and ankle mounted Shimmer sensors. A Nano 33 BLE Sense held in the hand sits well outside that distribution, so live predictions on the board are not expected to track hand motion reliably. The report discusses this in Questions 3 and 4.
+The Part II models are trained on one subject's chest and ankle mounted Shimmer sensors. A Nano 33 BLE Sense resting on a desk sits well outside that distribution, which is what the branch disagreement above demonstrates. The report discusses the causes in Questions 3 and 4.
 
 ## Authorship
 
