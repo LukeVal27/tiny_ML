@@ -32,6 +32,22 @@ EE 446 Homework 1 — DNN and Wine classification with model-compression techniq
 | [`Assignment1/Luke_Valerio_EE446_HW1_Pro.ipynb`](Assignment1/Luke_Valerio_EE446_HW1_Pro.ipynb) | Completed [Pro] programming notebook for Problem 1: baseline DNN, dynamic-range/INT8/float16 quantization, pruning, output-based knowledge distillation, and a combined KD+INT8 model, each reporting TFLite size and classification performance. |
 | [`Assignment1/Luke_Valerio_EE446_HW1_Dis.pdf`](Assignment1/Luke_Valerio_EE446_HW1_Dis.pdf) | Answers to the [Dis] discussion questions: Problem 1(e) analysis and all four Problem 2 (Edge Impulse) questions. |
 
+## Assignment 2
+
+EE 446 Homework 2 — network anomaly detection on the NSL-KDD style dataset (125,973 samples, 42 features), from preprocessing through full-integer INT8 quantization and Nano 33 BLE deployment.
+
+| File | Description |
+|------|-------------|
+| [`Assignment2/Luke_Valerio_EE446_HW2_Pro.ipynb`](Assignment2/Luke_Valerio_EE446_HW2_Pro.ipynb) | Completed [Pro] notebook for Problems 1–4: column dropping and binary label collapse, LabelEncoder on the categorical columns, t-SNE / PCA / KernelPCA 2-D visualizations, a 38→64→32→16→1 DNN, and full-integer INT8 post-training quantization with a representative dataset. |
+| [`Assignment2/Luke_Valerio_EE446_HW2_Dis.pdf`](Assignment2/Luke_Valerio_EE446_HW2_Dis.pdf) | Results writeup: classification reports and confusion matrices for 3(c) and 4(b), plus the Serial Monitor evidence for 5(c) and 5(d). |
+| [`Assignment2/network_data`](Assignment2/network_data) | Problem 5(c) Arduino sketch — five test samples, INT8 inference on the Nano 33 BLE. |
+| [`Assignment2/network_data_10`](Assignment2/network_data_10) | Problem 5(d) Arduino sketch — the following ten test samples. |
+| [`Assignment2/models`](Assignment2/models) | The float32 Keras model, the INT8 TFLite model, and the generated `network_model.h` C array. |
+
+The float32 model reaches 0.9985 test accuracy. Full INT8 quantization drops that to 0.9984 — three additional misclassifications out of 25,195 — while shrinking the model from 100.01 KB to 8.24 KB, a 12.1× reduction. Both sketches compile to 13% of flash and 29% of RAM on the Nano 33 BLE.
+
+**Authorship:** Claude (an AI assistant) wrote the notebook solution code and the Arduino `Serial.print`/dequantization blocks, executed the notebook, generated the quantized model and C arrays, verified both sketches compile, and drafted the writeup. Luke Valerio directed the work, made the design decisions, and reviewed the results. Flashing the board and capturing the Serial Monitor screenshots was done by Luke Valerio.
+
 ## Lab 7
 
 On-device data collection and tiny ensemble learning. Part I classifies an idle state against a lifting motion in Edge Impulse. Part II builds a three-branch autoencoder ensemble over the mHealth IMU dataset, combines the branches with a stacked meta-classifier, and compresses everything with pruning, quantization aware training, and full int8 conversion.

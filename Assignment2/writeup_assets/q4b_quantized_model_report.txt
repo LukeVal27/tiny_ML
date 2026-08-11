@@ -1,0 +1,22 @@
+Q4(b)  INT8 tflite_quant_model - test set performance
+input  scale = 0.0895969868  zero_point = -52
+output scale = 0.0039062500  zero_point = -128
+
+Accuracy: 0.9984
+
+              precision    recall  f1-score   support
+
+  attack (0)     0.9979    0.9987    0.9983     11726
+  normal (1)     0.9989    0.9981    0.9985     13469
+
+    accuracy                         0.9984     25195
+   macro avg     0.9984    0.9984    0.9984     25195
+weighted avg     0.9984    0.9984    0.9984     25195
+
+Confusion matrix (rows = actual, cols = predicted):
+[[11711    15]
+ [   25 13444]]
+
+float32 accuracy : 0.9985
+INT8    accuracy : 0.9984
+change           : -0.0001

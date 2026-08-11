@@ -1,0 +1,23 @@
+Expected predictions from the desktop INT8 interpreter
+input  scale=0.0895969868 zero_point=-52
+output scale=0.0039062500 zero_point=-128
+
+Q5(c) samples 0-4
+  Sample 0: prob=0.0000 predicted=0 actual=0
+  Sample 1: prob=0.9961 predicted=1 actual=1
+  Sample 2: prob=0.9961 predicted=1 actual=1
+  Sample 3: prob=0.0000 predicted=0 actual=0
+  Sample 4: prob=0.0000 predicted=0 actual=0
+
+Q5(d) samples 5-14
+  Sample 5: prob=0.0000 predicted=0 actual=0
+  Sample 6: prob=0.9961 predicted=1 actual=1
+  Sample 7: prob=0.0000 predicted=0 actual=0
+  Sample 8: prob=0.9961 predicted=1 actual=1
+  Sample 9: prob=0.0000 predicted=0 actual=0
+  Sample 10: prob=0.0000 predicted=0 actual=0
+  Sample 11: prob=0.0000 predicted=0 actual=0
+  Sample 12: prob=0.9961 predicted=1 actual=1
+  Sample 13: prob=0.0000 predicted=0 actual=0
+  Sample 14: prob=0.9961 predicted=1 actual=1
+
