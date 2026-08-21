@@ -1,0 +1,21 @@
+Portion tier thresholds derived from the physical model:
+  grams per unit area-fraction : 513.2 g
+  small  : f < 0.156   (< 80 g)
+  medium : 0.156 <= f < 0.351 (80-180 g)
+  large  : f >= 0.351  (> 180 g)
+
+  train/chicken: 3000 composed
+  train/broccoli: 3000 composed
+  train/rice: 3000 composed
+  train/beef: 3000 composed
+  train/potato: 3000 composed
+  test/chicken: 600 composed
+  test/broccoli: 600 composed
+  test/rice: 600 composed
+  test/beef: 600 composed
+  test/potato: 600 composed
+
+total composed: 18000
+  train tier balance small/medium/large: [4982, 5071, 4947]
+  test tier balance small/medium/large: [1033, 975, 992]
+written to /Users/lukevalerio/Documents/TinyML/FinalProject/data/composed_v4

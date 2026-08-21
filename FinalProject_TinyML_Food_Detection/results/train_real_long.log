@@ -1,0 +1,17 @@
+/Users/lukevalerio/miniconda3/lib/python3.13/site-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+train 12831 | val 2169 | test 3000
+source: real | class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0}
+model            : food_tinyml
+input            : (96, 96, 3)
+parameters       : 157,512
+est. int8 weights: 153.8 KB
+peak activations : 72.0 KB  (at layer 'stem_bn')
+est. arena floor : 72.0 KB + TFLM overhead (~4-10 KB)
+Epoch 1/130
+201/201 - 61s - 302ms/step - cls_acc: 0.6264 - cls_loss: 1.1541 - cls_macro_f1: 0.6223 - loss: 1.7665 - portion_acc: 0.5869 - portion_loss: 1.2248 - portion_ordinal_error: 0.4738 - val_cls_acc: 0.5021 - val_cls_loss: 1.2699 - val_cls_macro_f1: 0.4061 - val_loss: 1.7469 - val_portion_acc: 0.6782 - val_portion_loss: 0.9499 - val_portion_ordinal_error: 0.3421 - learning_rate: 0.0020
+Epoch 2/130
+201/201 - 57s - 284ms/step - cls_acc: 0.7047 - cls_loss: 0.9363 - cls_macro_f1: 0.7021 - loss: 1.3409 - portion_acc: 0.7530 - portion_loss: 0.8088 - portion_ordinal_error: 0.2611 - val_cls_acc: 0.5537 - val_cls_loss: 1.1912 - val_cls_macro_f1: 0.4334 - val_loss: 1.5484 - val_portion_acc: 0.7778 - val_portion_loss: 0.7119 - val_portion_ordinal_error: 0.2324 - learning_rate: 0.0020
+Epoch 3/130
+201/201 - 52s - 257ms/step - cls_acc: 0.7201 - cls_loss: 0.8983 - cls_macro_f1: 0.7162 - loss: 1.2278 - portion_acc: 0.7991 - portion_loss: 0.6599 - portion_ordinal_error: 0.2061 - val_cls_acc: 0.5394 - val_cls_loss: 1.1970 - val_cls_macro_f1: 0.4231 - val_loss: 1.5429 - val_portion_acc: 0.7755 - val_portion_loss: 0.6902 - val_portion_ordinal_error: 0.2278 - learning_rate: 0.0020
+Epoch 4/130

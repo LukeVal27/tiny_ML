@@ -1,0 +1,23 @@
+{
+  "provenance": "Portion ground truth for the on-device session. The 7 rice rows were typed at capture time into results/live_captures.jsonl. The broccoli, beef and chicken labels were supplied by the operator AFTER the session from direct knowledge of what was on the plate, and are recorded here as aggregate counts rather than back-filled into per-row records, because the specific row-to-tier assignment within a class was not observed and must not be invented.",
+  "session": "final",
+  "date": "2026-08-18",
+  "truth_counts": {
+    "broccoli": {"large": 10, "small": 9, "source": "operator, retrospective"},
+    "beef": {"large": 23, "source": "operator, retrospective; only large portions were available"},
+    "chicken": {"small": 20, "source": "operator, retrospective"},
+    "rice": {"medium": 7, "source": "typed at capture time"}
+  },
+  "totals": {"small": 29, "medium": 7, "large": 33, "n": 69},
+  "predictions": {
+    "note": "The model emitted 'large' on every one of the 75 captures in this session, at portion_conf exactly 0.9961 = 255/256, the maximum an int8 softmax can represent. It never once emitted 'small' or 'medium'.",
+    "small": 0, "medium": 0, "large": 75
+  },
+  "confusion": {
+    "rows_are_truth": ["small", "medium", "large"],
+    "cols_are_pred": ["small", "medium", "large"],
+    "matrix": [[0, 0, 29], [0, 0, 7], [0, 0, 33]]
+  },
+  "accuracy": 0.4783,
+  "interpretation": "0.4783 is entirely the base rate: 33 of 69 labelled captures happened to be large, and a constant 'large' predictor scores exactly that. The head has zero discriminative power on real camera input. Recall is 1.000 on large and 0.000 on both small and medium. This is a degenerate output, not a partially-working one, and it should be reported as such."
+}

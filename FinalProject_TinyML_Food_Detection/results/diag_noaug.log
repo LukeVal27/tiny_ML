@@ -1,0 +1,40 @@
+/Users/lukevalerio/miniconda3/lib/python3.13/site-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+train 12724 | val 2276 | test 3000
+class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0}
+model            : food_tinyml
+input            : (96, 96, 3)
+parameters       : 91,816
+est. int8 weights: 89.7 KB
+peak activations : 72.0 KB  (at layer 'stem_bn')
+est. arena floor : 72.0 KB + TFLM overhead (~4-10 KB)
+Epoch 1/8
+199/199 - 43s - 218ms/step - cls_acc: 0.5122 - cls_loss: 1.2455 - cls_macro_f1: 0.5060 - loss: 1.6125 - portion_acc: 0.7635 - portion_loss: 0.7338 - portion_ordinal_error: 0.2469 - val_cls_acc: 0.1894 - val_cls_loss: 2.0020 - val_cls_macro_f1: 0.0637 - val_loss: 3.3864 - val_portion_acc: 0.3304 - val_portion_loss: 2.7386 - val_portion_ordinal_error: 0.6696 - learning_rate: 0.0020
+Epoch 2/8
+199/199 - 38s - 189ms/step - cls_acc: 0.5457 - cls_loss: 1.2382 - cls_macro_f1: 0.5429 - loss: 1.4756 - portion_acc: 0.8548 - portion_loss: 0.4749 - portion_ordinal_error: 0.1462 - val_cls_acc: 0.1995 - val_cls_loss: 1.7465 - val_cls_macro_f1: 0.1051 - val_loss: 2.6489 - val_portion_acc: 0.5075 - val_portion_loss: 1.7914 - val_portion_ordinal_error: 0.5699 - learning_rate: 0.0020
+Epoch 3/8
+199/199 - 37s - 188ms/step - cls_acc: 0.5582 - cls_loss: 1.2185 - cls_macro_f1: 0.5560 - loss: 1.4260 - portion_acc: 0.8732 - portion_loss: 0.4147 - portion_ordinal_error: 0.1277 - val_cls_acc: 0.4161 - val_cls_loss: 1.4199 - val_cls_macro_f1: 0.3197 - val_loss: 1.8863 - val_portion_acc: 0.7320 - val_portion_loss: 0.9330 - val_portion_ordinal_error: 0.2799 - learning_rate: 0.0020
+Epoch 4/8
+199/199 - 38s - 190ms/step - cls_acc: 0.5605 - cls_loss: 1.2065 - cls_macro_f1: 0.5575 - loss: 1.3984 - portion_acc: 0.8849 - portion_loss: 0.3835 - portion_ordinal_error: 0.1155 - val_cls_acc: 0.4095 - val_cls_loss: 1.5158 - val_cls_macro_f1: 0.3199 - val_loss: 1.7638 - val_portion_acc: 0.8533 - val_portion_loss: 0.4798 - val_portion_ordinal_error: 0.1472 - learning_rate: 0.0020
+Epoch 5/8
+199/199 - 38s - 190ms/step - cls_acc: 0.5647 - cls_loss: 1.2056 - cls_macro_f1: 0.5622 - loss: 1.3824 - portion_acc: 0.8925 - portion_loss: 0.3538 - portion_ordinal_error: 0.1078 - val_cls_acc: 0.3089 - val_cls_loss: 1.7440 - val_cls_macro_f1: 0.2426 - val_loss: 2.0049 - val_portion_acc: 0.8445 - val_portion_loss: 0.5001 - val_portion_ordinal_error: 0.1564 - learning_rate: 0.0020
+Epoch 6/8
+199/199 - 44s - 221ms/step - cls_acc: 0.5602 - cls_loss: 1.2114 - cls_macro_f1: 0.5581 - loss: 1.3801 - portion_acc: 0.8995 - portion_loss: 0.3375 - portion_ordinal_error: 0.1006 - val_cls_acc: 0.2263 - val_cls_loss: 2.1978 - val_cls_macro_f1: 0.1271 - val_loss: 2.3875 - val_portion_acc: 0.8976 - val_portion_loss: 0.3346 - val_portion_ordinal_error: 0.1033 - learning_rate: 0.0020
+Epoch 7/8
+199/199 - 44s - 223ms/step - cls_acc: 0.5622 - cls_loss: 1.2049 - cls_macro_f1: 0.5594 - loss: 1.3655 - portion_acc: 0.9024 - portion_loss: 0.3210 - portion_ordinal_error: 0.0978 - val_cls_acc: 0.2882 - val_cls_loss: 1.7791 - val_cls_macro_f1: 0.1842 - val_loss: 1.9564 - val_portion_acc: 0.8989 - val_portion_loss: 0.3318 - val_portion_ordinal_error: 0.1019 - learning_rate: 0.0020
+Epoch 8/8
+
+Epoch 8: ReduceLROnPlateau reducing learning rate to 0.000800000037997961.
+199/199 - 46s - 229ms/step - cls_acc: 0.5641 - cls_loss: 1.1956 - cls_macro_f1: 0.5607 - loss: 1.3567 - portion_acc: 0.9029 - portion_loss: 0.3222 - portion_ordinal_error: 0.0974 - val_cls_acc: 0.3388 - val_cls_loss: 1.6263 - val_cls_macro_f1: 0.2568 - val_loss: 1.8253 - val_portion_acc: 0.8919 - val_portion_loss: 0.3794 - val_portion_ordinal_error: 0.1090 - learning_rate: 0.0020
+Restoring model weights from the end of the best epoch: 4.
+
+Evaluating FP32 baseline on the held-out test split ...
+  cls_acc                      0.3973
+  cls_loss                     1.5457
+  cls_macro_f1                 0.3168
+  loss                         1.7902
+  portion_acc                  0.8490
+  portion_loss                 0.4850
+  portion_ordinal_error        0.1513
+
+saved /Users/lukevalerio/Documents/TinyML/FinalProject/results/checkpoints/diag_noaug.keras

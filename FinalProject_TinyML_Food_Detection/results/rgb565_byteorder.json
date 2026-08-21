@@ -1,0 +1,16 @@
+{
+ "task": "B \u2014 RGB565 byte order (resolved, 1 flash cycle)",
+ "conclusion": "CURRENT CODE IS CORRECT. Keep big-endian (hi<<8)|lo in unpack565(). No R/B swap needed.",
+ "method": "Camera.testPattern() on-device, 64 raw byte-pairs sampled across row y=72 of the QCIF frame, decoded both ways on host.",
+ "evidence": {
+  "big_endian_current": "7 colour-bar runs; cyan/green/magenta/red decode correctly",
+  "little_endian_swapped": "10 runs, 0 recognisable colours (muddy purples/greys)",
+  "rb_swap": "ruled out \u2014 red decodes as red; an R/B transposition would render it blue"
+ },
+ "disproven": "RESEARCH_FINDINGS.md Q5 predicted the sensor is RGB565-swapped and that (lo<<8)|hi was needed. That is NOT true for this Harvard_TinyMLx / OV7675 path.",
+ "action": "none \u2014 do NOT change unpack565(). Changing it would BREAK a working decode.",
+ "ruled_out_do_not_retest": [
+  "little-endian (lo<<8)|hi",
+  "red/blue mask swap"
+ ]
+}

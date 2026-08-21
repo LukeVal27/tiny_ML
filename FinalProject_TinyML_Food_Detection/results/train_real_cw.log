@@ -1,0 +1,168 @@
+/Users/lukevalerio/miniconda3/lib/python3.13/site-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+train 12831 | val 2169 | test 3000
+source: real | class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0}
+class weights: {'chicken': 2.077, 'broccoli': 0.524, 'rice': 1.159, 'beef': 0.552, 'potato': 0.688}
+model            : food_tinyml
+input            : (96, 96, 3)
+parameters       : 157,512
+est. int8 weights: 153.8 KB
+peak activations : 72.0 KB  (at layer 'stem_bn')
+est. arena floor : 72.0 KB + TFLM overhead (~4-10 KB)
+Epoch 1/100
+201/201 - 52s - 261ms/step - cls_acc: 0.5496 - cls_loss: 1.2347 - cls_macro_f1: 0.5531 - loss: 1.8348 - portion_acc: 0.5959 - portion_loss: 1.1988 - portion_ordinal_error: 0.4569 - val_cls_acc: 0.4979 - val_cls_loss: 1.2972 - val_cls_macro_f1: 0.4453 - val_loss: 1.7115 - val_portion_acc: 0.7441 - val_portion_loss: 0.8246 - val_portion_ordinal_error: 0.2729 - learning_rate: 0.0020
+Epoch 2/100
+201/201 - 48s - 237ms/step - cls_acc: 0.6169 - cls_loss: 0.9775 - cls_macro_f1: 0.6168 - loss: 1.4125 - portion_acc: 0.7282 - portion_loss: 0.8690 - portion_ordinal_error: 0.2895 - val_cls_acc: 0.5201 - val_cls_loss: 1.2485 - val_cls_macro_f1: 0.4870 - val_loss: 1.7456 - val_portion_acc: 0.6385 - val_portion_loss: 0.9908 - val_portion_ordinal_error: 0.3702 - learning_rate: 0.0020
+Epoch 3/100
+201/201 - 47s - 236ms/step - cls_acc: 0.6399 - cls_loss: 0.9582 - cls_macro_f1: 0.6403 - loss: 1.3056 - portion_acc: 0.7858 - portion_loss: 0.6964 - portion_ordinal_error: 0.2230 - val_cls_acc: 0.5542 - val_cls_loss: 1.2678 - val_cls_macro_f1: 0.5034 - val_loss: 1.5474 - val_portion_acc: 0.8359 - val_portion_loss: 0.5565 - val_portion_ordinal_error: 0.1706 - learning_rate: 0.0020
+Epoch 4/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6458 - cls_loss: 0.9338 - cls_macro_f1: 0.6483 - loss: 1.2450 - portion_acc: 0.8027 - portion_loss: 0.6224 - portion_ordinal_error: 0.2025 - val_cls_acc: 0.4952 - val_cls_loss: 1.2385 - val_cls_macro_f1: 0.4872 - val_loss: 1.4834 - val_portion_acc: 0.8488 - val_portion_loss: 0.4863 - val_portion_ordinal_error: 0.1549 - learning_rate: 0.0020
+Epoch 5/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6672 - cls_loss: 0.9098 - cls_macro_f1: 0.6701 - loss: 1.1771 - portion_acc: 0.8365 - portion_loss: 0.5343 - portion_ordinal_error: 0.1669 - val_cls_acc: 0.5680 - val_cls_loss: 1.1763 - val_cls_macro_f1: 0.5689 - val_loss: 1.4193 - val_portion_acc: 0.8419 - val_portion_loss: 0.4833 - val_portion_ordinal_error: 0.1627 - learning_rate: 0.0020
+Epoch 6/100
+201/201 - 46s - 228ms/step - cls_acc: 0.6562 - cls_loss: 0.9107 - cls_macro_f1: 0.6582 - loss: 1.1721 - portion_acc: 0.8384 - portion_loss: 0.5224 - portion_ordinal_error: 0.1644 - val_cls_acc: 0.5440 - val_cls_loss: 1.2485 - val_cls_macro_f1: 0.4879 - val_loss: 1.5133 - val_portion_acc: 0.8322 - val_portion_loss: 0.5253 - val_portion_ordinal_error: 0.1706 - learning_rate: 0.0020
+Epoch 7/100
+201/201 - 46s - 229ms/step - cls_acc: 0.6886 - cls_loss: 0.8825 - cls_macro_f1: 0.6906 - loss: 1.1232 - portion_acc: 0.8518 - portion_loss: 0.4820 - portion_ordinal_error: 0.1509 - val_cls_acc: 0.5786 - val_cls_loss: 1.1713 - val_cls_macro_f1: 0.5720 - val_loss: 1.4049 - val_portion_acc: 0.8585 - val_portion_loss: 0.4645 - val_portion_ordinal_error: 0.1471 - learning_rate: 0.0020
+Epoch 8/100
+201/201 - 46s - 227ms/step - cls_acc: 0.6699 - cls_loss: 0.8879 - cls_macro_f1: 0.6712 - loss: 1.1165 - portion_acc: 0.8583 - portion_loss: 0.4570 - portion_ordinal_error: 0.1437 - val_cls_acc: 0.5689 - val_cls_loss: 1.2301 - val_cls_macro_f1: 0.5542 - val_loss: 1.4323 - val_portion_acc: 0.8700 - val_portion_loss: 0.4007 - val_portion_ordinal_error: 0.1309 - learning_rate: 0.0020
+Epoch 9/100
+201/201 - 46s - 227ms/step - cls_acc: 0.6801 - cls_loss: 0.8794 - cls_macro_f1: 0.6828 - loss: 1.0973 - portion_acc: 0.8658 - portion_loss: 0.4370 - portion_ordinal_error: 0.1358 - val_cls_acc: 0.5639 - val_cls_loss: 1.1444 - val_cls_macro_f1: 0.5537 - val_loss: 1.3352 - val_portion_acc: 0.8783 - val_portion_loss: 0.3788 - val_portion_ordinal_error: 0.1222 - learning_rate: 0.0020
+Epoch 10/100
+201/201 - 46s - 228ms/step - cls_acc: 0.6892 - cls_loss: 0.8639 - cls_macro_f1: 0.6917 - loss: 1.0860 - portion_acc: 0.8608 - portion_loss: 0.4448 - portion_ordinal_error: 0.1410 - val_cls_acc: 0.5606 - val_cls_loss: 1.1859 - val_cls_macro_f1: 0.5347 - val_loss: 1.3775 - val_portion_acc: 0.8820 - val_portion_loss: 0.3799 - val_portion_ordinal_error: 0.1185 - learning_rate: 0.0020
+Epoch 11/100
+
+Epoch 11: ReduceLROnPlateau reducing learning rate to 0.000800000037997961.
+201/201 - 45s - 224ms/step - cls_acc: 0.6737 - cls_loss: 0.8830 - cls_macro_f1: 0.6766 - loss: 1.0932 - portion_acc: 0.8697 - portion_loss: 0.4200 - portion_ordinal_error: 0.1319 - val_cls_acc: 0.5698 - val_cls_loss: 1.2255 - val_cls_macro_f1: 0.5369 - val_loss: 1.4357 - val_portion_acc: 0.8580 - val_portion_loss: 0.4162 - val_portion_ordinal_error: 0.1429 - learning_rate: 0.0020
+Epoch 12/100
+201/201 - 47s - 235ms/step - cls_acc: 0.6634 - cls_loss: 0.8973 - cls_macro_f1: 0.6667 - loss: 1.0870 - portion_acc: 0.8843 - portion_loss: 0.3792 - portion_ordinal_error: 0.1164 - val_cls_acc: 0.5556 - val_cls_loss: 1.1619 - val_cls_macro_f1: 0.5534 - val_loss: 1.3134 - val_portion_acc: 0.9106 - val_portion_loss: 0.2998 - val_portion_ordinal_error: 0.0894 - learning_rate: 8.0000e-04
+Epoch 13/100
+201/201 - 46s - 227ms/step - cls_acc: 0.6608 - cls_loss: 0.8952 - cls_macro_f1: 0.6632 - loss: 1.0864 - portion_acc: 0.8833 - portion_loss: 0.3827 - portion_ordinal_error: 0.1174 - val_cls_acc: 0.5652 - val_cls_loss: 1.1905 - val_cls_macro_f1: 0.5582 - val_loss: 1.3465 - val_portion_acc: 0.9041 - val_portion_loss: 0.3085 - val_portion_ordinal_error: 0.0964 - learning_rate: 8.0000e-04
+Epoch 14/100
+201/201 - 45s - 226ms/step - cls_acc: 0.6643 - cls_loss: 0.8949 - cls_macro_f1: 0.6662 - loss: 1.0809 - portion_acc: 0.8854 - portion_loss: 0.3720 - portion_ordinal_error: 0.1157 - val_cls_acc: 0.5832 - val_cls_loss: 1.2002 - val_cls_macro_f1: 0.5764 - val_loss: 1.3709 - val_portion_acc: 0.8898 - val_portion_loss: 0.3382 - val_portion_ordinal_error: 0.1102 - learning_rate: 8.0000e-04
+Epoch 15/100
+201/201 - 48s - 238ms/step - cls_acc: 0.6647 - cls_loss: 0.8992 - cls_macro_f1: 0.6667 - loss: 1.0890 - portion_acc: 0.8845 - portion_loss: 0.3793 - portion_ordinal_error: 0.1164 - val_cls_acc: 0.5703 - val_cls_loss: 1.1515 - val_cls_macro_f1: 0.5617 - val_loss: 1.2982 - val_portion_acc: 0.9083 - val_portion_loss: 0.2905 - val_portion_ordinal_error: 0.0922 - learning_rate: 8.0000e-04
+Epoch 16/100
+201/201 - 49s - 244ms/step - cls_acc: 0.6719 - cls_loss: 0.8819 - cls_macro_f1: 0.6745 - loss: 1.0680 - portion_acc: 0.8843 - portion_loss: 0.3747 - portion_ordinal_error: 0.1167 - val_cls_acc: 0.5892 - val_cls_loss: 1.1512 - val_cls_macro_f1: 0.5914 - val_loss: 1.3018 - val_portion_acc: 0.9046 - val_portion_loss: 0.2981 - val_portion_ordinal_error: 0.0954 - learning_rate: 8.0000e-04
+Epoch 17/100
+201/201 - 47s - 233ms/step - cls_acc: 0.6743 - cls_loss: 0.8788 - cls_macro_f1: 0.6763 - loss: 1.0598 - portion_acc: 0.8892 - portion_loss: 0.3619 - portion_ordinal_error: 0.1115 - val_cls_acc: 0.5846 - val_cls_loss: 1.1866 - val_cls_macro_f1: 0.5669 - val_loss: 1.3279 - val_portion_acc: 0.9129 - val_portion_loss: 0.2787 - val_portion_ordinal_error: 0.0871 - learning_rate: 8.0000e-04
+Epoch 18/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6690 - cls_loss: 0.8795 - cls_macro_f1: 0.6710 - loss: 1.0615 - portion_acc: 0.8878 - portion_loss: 0.3635 - portion_ordinal_error: 0.1129 - val_cls_acc: 0.6044 - val_cls_loss: 1.1992 - val_cls_macro_f1: 0.5971 - val_loss: 1.3400 - val_portion_acc: 0.9138 - val_portion_loss: 0.2776 - val_portion_ordinal_error: 0.0862 - learning_rate: 8.0000e-04
+Epoch 19/100
+201/201 - 47s - 232ms/step - cls_acc: 0.6792 - cls_loss: 0.8725 - cls_macro_f1: 0.6814 - loss: 1.0456 - portion_acc: 0.8955 - portion_loss: 0.3464 - portion_ordinal_error: 0.1051 - val_cls_acc: 0.5998 - val_cls_loss: 1.1956 - val_cls_macro_f1: 0.5823 - val_loss: 1.3328 - val_portion_acc: 0.9166 - val_portion_loss: 0.2704 - val_portion_ordinal_error: 0.0834 - learning_rate: 8.0000e-04
+Epoch 20/100
+201/201 - 46s - 228ms/step - cls_acc: 0.6808 - cls_loss: 0.8664 - cls_macro_f1: 0.6827 - loss: 1.0414 - portion_acc: 0.8945 - portion_loss: 0.3487 - portion_ordinal_error: 0.1062 - val_cls_acc: 0.5952 - val_cls_loss: 1.1933 - val_cls_macro_f1: 0.5924 - val_loss: 1.3299 - val_portion_acc: 0.9170 - val_portion_loss: 0.2694 - val_portion_ordinal_error: 0.0830 - learning_rate: 8.0000e-04
+Epoch 21/100
+201/201 - 47s - 232ms/step - cls_acc: 0.6812 - cls_loss: 0.8695 - cls_macro_f1: 0.6832 - loss: 1.0405 - portion_acc: 0.8951 - portion_loss: 0.3405 - portion_ordinal_error: 0.1055 - val_cls_acc: 0.5795 - val_cls_loss: 1.1410 - val_cls_macro_f1: 0.5753 - val_loss: 1.2771 - val_portion_acc: 0.9096 - val_portion_loss: 0.2689 - val_portion_ordinal_error: 0.0904 - learning_rate: 8.0000e-04
+Epoch 22/100
+
+Epoch 22: ReduceLROnPlateau reducing learning rate to 0.00032000001519918444.
+201/201 - 46s - 231ms/step - cls_acc: 0.6780 - cls_loss: 0.8762 - cls_macro_f1: 0.6798 - loss: 1.0541 - portion_acc: 0.8888 - portion_loss: 0.3548 - portion_ordinal_error: 0.1118 - val_cls_acc: 0.5763 - val_cls_loss: 1.0964 - val_cls_macro_f1: 0.5833 - val_loss: 1.2804 - val_portion_acc: 0.8815 - val_portion_loss: 0.3655 - val_portion_ordinal_error: 0.1185 - learning_rate: 8.0000e-04
+Epoch 23/100
+201/201 - 47s - 236ms/step - cls_acc: 0.6406 - cls_loss: 0.9214 - cls_macro_f1: 0.6399 - loss: 1.0861 - portion_acc: 0.8995 - portion_loss: 0.3303 - portion_ordinal_error: 0.1009 - val_cls_acc: 0.5947 - val_cls_loss: 1.1718 - val_cls_macro_f1: 0.5918 - val_loss: 1.3061 - val_portion_acc: 0.9221 - val_portion_loss: 0.2650 - val_portion_ordinal_error: 0.0779 - learning_rate: 3.2000e-04
+Epoch 24/100
+201/201 - 48s - 239ms/step - cls_acc: 0.6370 - cls_loss: 0.9236 - cls_macro_f1: 0.6353 - loss: 1.0829 - portion_acc: 0.9039 - portion_loss: 0.3177 - portion_ordinal_error: 0.0964 - val_cls_acc: 0.6058 - val_cls_loss: 1.1749 - val_cls_macro_f1: 0.6062 - val_loss: 1.3074 - val_portion_acc: 0.9212 - val_portion_loss: 0.2617 - val_portion_ordinal_error: 0.0788 - learning_rate: 3.2000e-04
+Epoch 25/100
+201/201 - 47s - 232ms/step - cls_acc: 0.6534 - cls_loss: 0.8987 - cls_macro_f1: 0.6527 - loss: 1.0510 - portion_acc: 0.9052 - portion_loss: 0.3040 - portion_ordinal_error: 0.0951 - val_cls_acc: 0.6026 - val_cls_loss: 1.1463 - val_cls_macro_f1: 0.6080 - val_loss: 1.2753 - val_portion_acc: 0.9235 - val_portion_loss: 0.2546 - val_portion_ordinal_error: 0.0765 - learning_rate: 3.2000e-04
+Epoch 26/100
+201/201 - 46s - 231ms/step - cls_acc: 0.6509 - cls_loss: 0.8872 - cls_macro_f1: 0.6491 - loss: 1.0446 - portion_acc: 0.9035 - portion_loss: 0.3147 - portion_ordinal_error: 0.0967 - val_cls_acc: 0.6072 - val_cls_loss: 1.1550 - val_cls_macro_f1: 0.6126 - val_loss: 1.2818 - val_portion_acc: 0.9299 - val_portion_loss: 0.2502 - val_portion_ordinal_error: 0.0701 - learning_rate: 3.2000e-04
+Epoch 27/100
+201/201 - 46s - 229ms/step - cls_acc: 0.6410 - cls_loss: 0.8973 - cls_macro_f1: 0.6380 - loss: 1.0467 - portion_acc: 0.9110 - portion_loss: 0.2975 - portion_ordinal_error: 0.0892 - val_cls_acc: 0.6164 - val_cls_loss: 1.1265 - val_cls_macro_f1: 0.6216 - val_loss: 1.2569 - val_portion_acc: 0.9161 - val_portion_loss: 0.2577 - val_portion_ordinal_error: 0.0839 - learning_rate: 3.2000e-04
+Epoch 28/100
+201/201 - 46s - 227ms/step - cls_acc: 0.6586 - cls_loss: 0.8797 - cls_macro_f1: 0.6564 - loss: 1.0286 - portion_acc: 0.9087 - portion_loss: 0.2980 - portion_ordinal_error: 0.0919 - val_cls_acc: 0.6118 - val_cls_loss: 1.1298 - val_cls_macro_f1: 0.6197 - val_loss: 1.2600 - val_portion_acc: 0.9189 - val_portion_loss: 0.2571 - val_portion_ordinal_error: 0.0811 - learning_rate: 3.2000e-04
+Epoch 29/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6633 - cls_loss: 0.8751 - cls_macro_f1: 0.6619 - loss: 1.0268 - portion_acc: 0.9066 - portion_loss: 0.3035 - portion_ordinal_error: 0.0938 - val_cls_acc: 0.6021 - val_cls_loss: 1.1050 - val_cls_macro_f1: 0.6117 - val_loss: 1.2334 - val_portion_acc: 0.9262 - val_portion_loss: 0.2537 - val_portion_ordinal_error: 0.0738 - learning_rate: 3.2000e-04
+Epoch 30/100
+201/201 - 46s - 231ms/step - cls_acc: 0.6610 - cls_loss: 0.8777 - cls_macro_f1: 0.6602 - loss: 1.0202 - portion_acc: 0.9164 - portion_loss: 0.2850 - portion_ordinal_error: 0.0840 - val_cls_acc: 0.6109 - val_cls_loss: 1.1580 - val_cls_macro_f1: 0.6137 - val_loss: 1.2793 - val_portion_acc: 0.9272 - val_portion_loss: 0.2388 - val_portion_ordinal_error: 0.0728 - learning_rate: 3.2000e-04
+Epoch 31/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6673 - cls_loss: 0.8707 - cls_macro_f1: 0.6671 - loss: 1.0190 - portion_acc: 0.9071 - portion_loss: 0.2969 - portion_ordinal_error: 0.0930 - val_cls_acc: 0.6233 - val_cls_loss: 1.1465 - val_cls_macro_f1: 0.6251 - val_loss: 1.2718 - val_portion_acc: 0.9221 - val_portion_loss: 0.2474 - val_portion_ordinal_error: 0.0779 - learning_rate: 3.2000e-04
+Epoch 32/100
+201/201 - 45s - 225ms/step - cls_acc: 0.6724 - cls_loss: 0.8580 - cls_macro_f1: 0.6723 - loss: 1.0077 - portion_acc: 0.9052 - portion_loss: 0.3004 - portion_ordinal_error: 0.0949 - val_cls_acc: 0.6224 - val_cls_loss: 1.1629 - val_cls_macro_f1: 0.6219 - val_loss: 1.2899 - val_portion_acc: 0.9225 - val_portion_loss: 0.2505 - val_portion_ordinal_error: 0.0775 - learning_rate: 3.2000e-04
+Epoch 33/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6687 - cls_loss: 0.8585 - cls_macro_f1: 0.6691 - loss: 1.0003 - portion_acc: 0.9167 - portion_loss: 0.2830 - portion_ordinal_error: 0.0835 - val_cls_acc: 0.6229 - val_cls_loss: 1.1173 - val_cls_macro_f1: 0.6313 - val_loss: 1.2411 - val_portion_acc: 0.9216 - val_portion_loss: 0.2444 - val_portion_ordinal_error: 0.0784 - learning_rate: 3.2000e-04
+Epoch 34/100
+201/201 - 46s - 227ms/step - cls_acc: 0.6847 - cls_loss: 0.8455 - cls_macro_f1: 0.6853 - loss: 0.9942 - portion_acc: 0.9084 - portion_loss: 0.2961 - portion_ordinal_error: 0.0918 - val_cls_acc: 0.6164 - val_cls_loss: 1.1402 - val_cls_macro_f1: 0.6209 - val_loss: 1.2661 - val_portion_acc: 0.9216 - val_portion_loss: 0.2480 - val_portion_ordinal_error: 0.0784 - learning_rate: 3.2000e-04
+Epoch 35/100
+201/201 - 46s - 228ms/step - cls_acc: 0.6860 - cls_loss: 0.8418 - cls_macro_f1: 0.6872 - loss: 0.9883 - portion_acc: 0.9089 - portion_loss: 0.2921 - portion_ordinal_error: 0.0914 - val_cls_acc: 0.6178 - val_cls_loss: 1.1486 - val_cls_macro_f1: 0.6170 - val_loss: 1.2725 - val_portion_acc: 0.9239 - val_portion_loss: 0.2443 - val_portion_ordinal_error: 0.0761 - learning_rate: 3.2000e-04
+Epoch 36/100
+201/201 - 46s - 227ms/step - cls_acc: 0.6897 - cls_loss: 0.8367 - cls_macro_f1: 0.6899 - loss: 0.9800 - portion_acc: 0.9122 - portion_loss: 0.2874 - portion_ordinal_error: 0.0881 - val_cls_acc: 0.6113 - val_cls_loss: 1.1856 - val_cls_macro_f1: 0.6091 - val_loss: 1.3087 - val_portion_acc: 0.9304 - val_portion_loss: 0.2418 - val_portion_ordinal_error: 0.0696 - learning_rate: 3.2000e-04
+Epoch 37/100
+201/201 - 46s - 228ms/step - cls_acc: 0.6881 - cls_loss: 0.8354 - cls_macro_f1: 0.6884 - loss: 0.9798 - portion_acc: 0.9122 - portion_loss: 0.2884 - portion_ordinal_error: 0.0880 - val_cls_acc: 0.6335 - val_cls_loss: 1.1339 - val_cls_macro_f1: 0.6368 - val_loss: 1.2606 - val_portion_acc: 0.9267 - val_portion_loss: 0.2501 - val_portion_ordinal_error: 0.0733 - learning_rate: 3.2000e-04
+Epoch 38/100
+201/201 - 46s - 231ms/step - cls_acc: 0.6818 - cls_loss: 0.8372 - cls_macro_f1: 0.6820 - loss: 0.9827 - portion_acc: 0.9081 - portion_loss: 0.2913 - portion_ordinal_error: 0.0920 - val_cls_acc: 0.6127 - val_cls_loss: 1.1608 - val_cls_macro_f1: 0.6079 - val_loss: 1.2828 - val_portion_acc: 0.9267 - val_portion_loss: 0.2402 - val_portion_ordinal_error: 0.0733 - learning_rate: 3.2000e-04
+Epoch 39/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6848 - cls_loss: 0.8450 - cls_macro_f1: 0.6857 - loss: 0.9879 - portion_acc: 0.9125 - portion_loss: 0.2860 - portion_ordinal_error: 0.0879 - val_cls_acc: 0.6109 - val_cls_loss: 1.1796 - val_cls_macro_f1: 0.6058 - val_loss: 1.3018 - val_portion_acc: 0.9304 - val_portion_loss: 0.2403 - val_portion_ordinal_error: 0.0696 - learning_rate: 3.2000e-04
+Epoch 40/100
+201/201 - 46s - 228ms/step - cls_acc: 0.6864 - cls_loss: 0.8360 - cls_macro_f1: 0.6869 - loss: 0.9790 - portion_acc: 0.9122 - portion_loss: 0.2859 - portion_ordinal_error: 0.0881 - val_cls_acc: 0.6252 - val_cls_loss: 1.1363 - val_cls_macro_f1: 0.6241 - val_loss: 1.2561 - val_portion_acc: 0.9272 - val_portion_loss: 0.2363 - val_portion_ordinal_error: 0.0728 - learning_rate: 3.2000e-04
+Epoch 41/100
+
+Epoch 41: ReduceLROnPlateau reducing learning rate to 0.0001280000084079802.
+201/201 - 46s - 230ms/step - cls_acc: 0.6898 - cls_loss: 0.8275 - cls_macro_f1: 0.6898 - loss: 0.9668 - portion_acc: 0.9147 - portion_loss: 0.2807 - portion_ordinal_error: 0.0854 - val_cls_acc: 0.6256 - val_cls_loss: 1.1328 - val_cls_macro_f1: 0.6233 - val_loss: 1.2506 - val_portion_acc: 0.9308 - val_portion_loss: 0.2320 - val_portion_ordinal_error: 0.0692 - learning_rate: 3.2000e-04
+Epoch 42/100
+201/201 - 45s - 226ms/step - cls_acc: 0.6651 - cls_loss: 0.8668 - cls_macro_f1: 0.6638 - loss: 0.9976 - portion_acc: 0.9208 - portion_loss: 0.2611 - portion_ordinal_error: 0.0793 - val_cls_acc: 0.6293 - val_cls_loss: 1.1359 - val_cls_macro_f1: 0.6259 - val_loss: 1.2536 - val_portion_acc: 0.9308 - val_portion_loss: 0.2317 - val_portion_ordinal_error: 0.0692 - learning_rate: 1.2800e-04
+Epoch 43/100
+201/201 - 46s - 229ms/step - cls_acc: 0.6714 - cls_loss: 0.8549 - cls_macro_f1: 0.6696 - loss: 0.9850 - portion_acc: 0.9207 - portion_loss: 0.2604 - portion_ordinal_error: 0.0794 - val_cls_acc: 0.6252 - val_cls_loss: 1.1015 - val_cls_macro_f1: 0.6298 - val_loss: 1.2181 - val_portion_acc: 0.9285 - val_portion_loss: 0.2300 - val_portion_ordinal_error: 0.0715 - learning_rate: 1.2800e-04
+Epoch 44/100
+201/201 - 46s - 231ms/step - cls_acc: 0.6760 - cls_loss: 0.8431 - cls_macro_f1: 0.6744 - loss: 0.9746 - portion_acc: 0.9196 - portion_loss: 0.2634 - portion_ordinal_error: 0.0805 - val_cls_acc: 0.6219 - val_cls_loss: 1.1398 - val_cls_macro_f1: 0.6148 - val_loss: 1.2607 - val_portion_acc: 0.9267 - val_portion_loss: 0.2382 - val_portion_ordinal_error: 0.0733 - learning_rate: 1.2800e-04
+Epoch 45/100
+
+Epoch 45: ReduceLROnPlateau reducing learning rate to 5.120000569149852e-05.
+201/201 - 46s - 227ms/step - cls_acc: 0.6926 - cls_loss: 0.8244 - cls_macro_f1: 0.6928 - loss: 0.9547 - portion_acc: 0.9221 - portion_loss: 0.2600 - portion_ordinal_error: 0.0780 - val_cls_acc: 0.6298 - val_cls_loss: 1.1251 - val_cls_macro_f1: 0.6313 - val_loss: 1.2417 - val_portion_acc: 0.9258 - val_portion_loss: 0.2298 - val_portion_ordinal_error: 0.0742 - learning_rate: 1.2800e-04
+Epoch 46/100
+201/201 - 45s - 226ms/step - cls_acc: 0.6551 - cls_loss: 0.8542 - cls_macro_f1: 0.6510 - loss: 0.9818 - portion_acc: 0.9224 - portion_loss: 0.2557 - portion_ordinal_error: 0.0779 - val_cls_acc: 0.6358 - val_cls_loss: 1.0910 - val_cls_macro_f1: 0.6454 - val_loss: 1.2078 - val_portion_acc: 0.9290 - val_portion_loss: 0.2311 - val_portion_ordinal_error: 0.0710 - learning_rate: 5.1200e-05
+Epoch 47/100
+201/201 - 46s - 229ms/step - cls_acc: 0.6612 - cls_loss: 0.8343 - cls_macro_f1: 0.6569 - loss: 0.9662 - portion_acc: 0.9191 - portion_loss: 0.2645 - portion_ordinal_error: 0.0812 - val_cls_acc: 0.6339 - val_cls_loss: 1.1300 - val_cls_macro_f1: 0.6369 - val_loss: 1.2487 - val_portion_acc: 0.9295 - val_portion_loss: 0.2341 - val_portion_ordinal_error: 0.0705 - learning_rate: 5.1200e-05
+Epoch 48/100
+201/201 - 46s - 229ms/step - cls_acc: 0.6804 - cls_loss: 0.8168 - cls_macro_f1: 0.6775 - loss: 0.9422 - portion_acc: 0.9229 - portion_loss: 0.2492 - portion_ordinal_error: 0.0772 - val_cls_acc: 0.6307 - val_cls_loss: 1.1131 - val_cls_macro_f1: 0.6368 - val_loss: 1.2327 - val_portion_acc: 0.9244 - val_portion_loss: 0.2361 - val_portion_ordinal_error: 0.0756 - learning_rate: 5.1200e-05
+Epoch 49/100
+201/201 - 45s - 225ms/step - cls_acc: 0.6777 - cls_loss: 0.8244 - cls_macro_f1: 0.6747 - loss: 0.9514 - portion_acc: 0.9235 - portion_loss: 0.2542 - portion_ordinal_error: 0.0767 - val_cls_acc: 0.6289 - val_cls_loss: 1.1173 - val_cls_macro_f1: 0.6345 - val_loss: 1.2338 - val_portion_acc: 0.9281 - val_portion_loss: 0.2301 - val_portion_ordinal_error: 0.0719 - learning_rate: 5.1200e-05
+Epoch 50/100
+
+Epoch 50: ReduceLROnPlateau reducing learning rate to 2.0480001694522798e-05.
+201/201 - 46s - 228ms/step - cls_acc: 0.6737 - cls_loss: 0.8207 - cls_macro_f1: 0.6701 - loss: 0.9405 - portion_acc: 0.9262 - portion_loss: 0.2462 - portion_ordinal_error: 0.0740 - val_cls_acc: 0.6344 - val_cls_loss: 1.1210 - val_cls_macro_f1: 0.6420 - val_loss: 1.2375 - val_portion_acc: 0.9281 - val_portion_loss: 0.2303 - val_portion_ordinal_error: 0.0719 - learning_rate: 5.1200e-05
+Epoch 51/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6787 - cls_loss: 0.8301 - cls_macro_f1: 0.6773 - loss: 0.9536 - portion_acc: 0.9259 - portion_loss: 0.2494 - portion_ordinal_error: 0.0747 - val_cls_acc: 0.6284 - val_cls_loss: 1.0849 - val_cls_macro_f1: 0.6384 - val_loss: 1.2017 - val_portion_acc: 0.9281 - val_portion_loss: 0.2310 - val_portion_ordinal_error: 0.0719 - learning_rate: 2.0480e-05
+Epoch 52/100
+201/201 - 46s - 229ms/step - cls_acc: 0.6789 - cls_loss: 0.8193 - cls_macro_f1: 0.6778 - loss: 0.9435 - portion_acc: 0.9260 - portion_loss: 0.2485 - portion_ordinal_error: 0.0742 - val_cls_acc: 0.6321 - val_cls_loss: 1.1064 - val_cls_macro_f1: 0.6413 - val_loss: 1.2231 - val_portion_acc: 0.9249 - val_portion_loss: 0.2307 - val_portion_ordinal_error: 0.0751 - learning_rate: 2.0480e-05
+Epoch 53/100
+201/201 - 46s - 230ms/step - cls_acc: 0.6708 - cls_loss: 0.8156 - cls_macro_f1: 0.6663 - loss: 0.9361 - portion_acc: 0.9265 - portion_loss: 0.2420 - portion_ordinal_error: 0.0739 - val_cls_acc: 0.6164 - val_cls_loss: 1.0567 - val_cls_macro_f1: 0.6288 - val_loss: 1.1727 - val_portion_acc: 0.9253 - val_portion_loss: 0.2302 - val_portion_ordinal_error: 0.0747 - learning_rate: 2.0480e-05
+Epoch 54/100
+
+Epoch 54: ReduceLROnPlateau reducing learning rate to 1e-05.
+201/201 - 46s - 227ms/step - cls_acc: 0.6862 - cls_loss: 0.8060 - cls_macro_f1: 0.6832 - loss: 0.9372 - portion_acc: 0.9197 - portion_loss: 0.2625 - portion_ordinal_error: 0.0804 - val_cls_acc: 0.6312 - val_cls_loss: 1.0935 - val_cls_macro_f1: 0.6410 - val_loss: 1.2113 - val_portion_acc: 0.9267 - val_portion_loss: 0.2329 - val_portion_ordinal_error: 0.0733 - learning_rate: 2.0480e-05
+Epoch 55/100
+201/201 - 46s - 228ms/step - cls_acc: 0.6971 - cls_loss: 0.8088 - cls_macro_f1: 0.6967 - loss: 0.9322 - portion_acc: 0.9264 - portion_loss: 0.2461 - portion_ordinal_error: 0.0738 - val_cls_acc: 0.6349 - val_cls_loss: 1.0898 - val_cls_macro_f1: 0.6457 - val_loss: 1.2090 - val_portion_acc: 0.9258 - val_portion_loss: 0.2359 - val_portion_ordinal_error: 0.0742 - learning_rate: 1.0000e-05
+Epoch 56/100
+201/201 - 46s - 228ms/step - cls_acc: 0.6850 - cls_loss: 0.8066 - cls_macro_f1: 0.6832 - loss: 0.9295 - portion_acc: 0.9261 - portion_loss: 0.2465 - portion_ordinal_error: 0.0742 - val_cls_acc: 0.6376 - val_cls_loss: 1.0944 - val_cls_macro_f1: 0.6475 - val_loss: 1.2148 - val_portion_acc: 0.9253 - val_portion_loss: 0.2384 - val_portion_ordinal_error: 0.0747 - learning_rate: 1.0000e-05
+Epoch 57/100
+201/201 - 45s - 223ms/step - cls_acc: 0.6861 - cls_loss: 0.8052 - cls_macro_f1: 0.6836 - loss: 0.9277 - portion_acc: 0.9264 - portion_loss: 0.2449 - portion_ordinal_error: 0.0737 - val_cls_acc: 0.6335 - val_cls_loss: 1.0876 - val_cls_macro_f1: 0.6440 - val_loss: 1.2055 - val_portion_acc: 0.9253 - val_portion_loss: 0.2336 - val_portion_ordinal_error: 0.0747 - learning_rate: 1.0000e-05
+Epoch 58/100
+201/201 - 45s - 225ms/step - cls_acc: 0.6878 - cls_loss: 0.8052 - cls_macro_f1: 0.6864 - loss: 0.9283 - portion_acc: 0.9246 - portion_loss: 0.2489 - portion_ordinal_error: 0.0754 - val_cls_acc: 0.6219 - val_cls_loss: 1.0671 - val_cls_macro_f1: 0.6338 - val_loss: 1.1832 - val_portion_acc: 0.9244 - val_portion_loss: 0.2299 - val_portion_ordinal_error: 0.0756 - learning_rate: 1.0000e-05
+Epoch 59/100
+201/201 - 46s - 227ms/step - cls_acc: 0.6873 - cls_loss: 0.7939 - cls_macro_f1: 0.6853 - loss: 0.9170 - portion_acc: 0.9245 - portion_loss: 0.2464 - portion_ordinal_error: 0.0757 - val_cls_acc: 0.6339 - val_cls_loss: 1.0818 - val_cls_macro_f1: 0.6450 - val_loss: 1.2007 - val_portion_acc: 0.9244 - val_portion_loss: 0.2356 - val_portion_ordinal_error: 0.0756 - learning_rate: 1.0000e-05
+Epoch 60/100
+201/201 - 46s - 229ms/step - cls_acc: 0.6881 - cls_loss: 0.8035 - cls_macro_f1: 0.6865 - loss: 0.9282 - portion_acc: 0.9232 - portion_loss: 0.2499 - portion_ordinal_error: 0.0768 - val_cls_acc: 0.6146 - val_cls_loss: 1.0624 - val_cls_macro_f1: 0.6262 - val_loss: 1.1789 - val_portion_acc: 0.9244 - val_portion_loss: 0.2311 - val_portion_ordinal_error: 0.0756 - learning_rate: 1.0000e-05
+Epoch 61/100
+201/201 - 47s - 234ms/step - cls_acc: 0.6860 - cls_loss: 0.8002 - cls_macro_f1: 0.6834 - loss: 0.9228 - portion_acc: 0.9267 - portion_loss: 0.2461 - portion_ordinal_error: 0.0735 - val_cls_acc: 0.6104 - val_cls_loss: 1.0547 - val_cls_macro_f1: 0.6220 - val_loss: 1.1747 - val_portion_acc: 0.9239 - val_portion_loss: 0.2382 - val_portion_ordinal_error: 0.0761 - learning_rate: 1.0000e-05
+Epoch 62/100
+201/201 - 53s - 265ms/step - cls_acc: 0.6950 - cls_loss: 0.8051 - cls_macro_f1: 0.6932 - loss: 0.9283 - portion_acc: 0.9225 - portion_loss: 0.2461 - portion_ordinal_error: 0.0777 - val_cls_acc: 0.6349 - val_cls_loss: 1.0945 - val_cls_macro_f1: 0.6447 - val_loss: 1.2107 - val_portion_acc: 0.9295 - val_portion_loss: 0.2302 - val_portion_ordinal_error: 0.0705 - learning_rate: 1.0000e-05
+Epoch 63/100
+201/201 - 50s - 249ms/step - cls_acc: 0.6862 - cls_loss: 0.7996 - cls_macro_f1: 0.6829 - loss: 0.9238 - portion_acc: 0.9246 - portion_loss: 0.2491 - portion_ordinal_error: 0.0755 - val_cls_acc: 0.6279 - val_cls_loss: 1.0772 - val_cls_macro_f1: 0.6395 - val_loss: 1.1994 - val_portion_acc: 0.9207 - val_portion_loss: 0.2423 - val_portion_ordinal_error: 0.0793 - learning_rate: 1.0000e-05
+Epoch 64/100
+201/201 - 49s - 245ms/step - cls_acc: 0.6824 - cls_loss: 0.7992 - cls_macro_f1: 0.6795 - loss: 0.9237 - portion_acc: 0.9253 - portion_loss: 0.2494 - portion_ordinal_error: 0.0747 - val_cls_acc: 0.6247 - val_cls_loss: 1.0655 - val_cls_macro_f1: 0.6360 - val_loss: 1.1862 - val_portion_acc: 0.9198 - val_portion_loss: 0.2394 - val_portion_ordinal_error: 0.0802 - learning_rate: 1.0000e-05
+Epoch 65/100
+201/201 - 48s - 239ms/step - cls_acc: 0.6889 - cls_loss: 0.8084 - cls_macro_f1: 0.6875 - loss: 0.9272 - portion_acc: 0.9260 - portion_loss: 0.2373 - portion_ordinal_error: 0.0741 - val_cls_acc: 0.6330 - val_cls_loss: 1.0892 - val_cls_macro_f1: 0.6438 - val_loss: 1.2059 - val_portion_acc: 0.9258 - val_portion_loss: 0.2310 - val_portion_ordinal_error: 0.0742 - learning_rate: 1.0000e-05
+Epoch 66/100
+201/201 - 48s - 240ms/step - cls_acc: 0.6915 - cls_loss: 0.7973 - cls_macro_f1: 0.6895 - loss: 0.9163 - portion_acc: 0.9263 - portion_loss: 0.2376 - portion_ordinal_error: 0.0738 - val_cls_acc: 0.6275 - val_cls_loss: 1.0693 - val_cls_macro_f1: 0.6392 - val_loss: 1.1849 - val_portion_acc: 0.9244 - val_portion_loss: 0.2293 - val_portion_ordinal_error: 0.0756 - learning_rate: 1.0000e-05
+Epoch 66: early stopping
+Restoring model weights from the end of the best epoch: 56.
+
+Evaluating FP32 baseline on the held-out test split ...
+  cls_acc                      0.6460
+  cls_loss                     1.0363
+  cls_macro_f1                 0.6462
+  loss                         1.1571
+  portion_acc                  0.9237
+  portion_loss                 0.2397
+  portion_ordinal_error        0.0763
+
+saved /Users/lukevalerio/Documents/TinyML/FinalProject/results/checkpoints/real_cw.keras

@@ -1,0 +1,390 @@
+loading results/checkpoints/a10_v3_pool.keras
+
+evaluating FP32 Keras baseline ...
+  [FP32 (Keras)] macro-F1 0.5511 | cls acc 0.5610 | portion acc 0.9303 | ord err 0.0700 | off-by-2 0.0003
+Saved artifact at '/var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp4ljny06e'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(1, 96, 96, 3), dtype=tf.float32, name='image')
+Output Type:
+  Dict[['cls', TensorSpec(shape=(1, 5), dtype=tf.float32, name=None)], ['portion', TensorSpec(shape=(1, 3), dtype=tf.float32, name=None)]]
+Captures:
+  4841629520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668496: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669264: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669072: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669456: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668304: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668688: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670224: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670032: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670416: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668112: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669648: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671184: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670992: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671376: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668880: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670608: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672144: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671952: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672336: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669840: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671568: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670800: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672528: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671760: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672720: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842681744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842681168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1786515452.448229 63091997 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1786515452.448262 63091997 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1786515452.448435 63091997 reader.cc:83] Reading SavedModel from: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp4ljny06e
+I0000 00:00:1786515452.450357 63091997 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1786515452.450364 63091997 reader.cc:147] Reading SavedModel debug info (if present) from: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp4ljny06e
+I0000 00:00:1786515452.466682 63091997 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+I0000 00:00:1786515452.470595 63091997 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1786515452.570672 63091997 loader.cc:220] Running initialization op on SavedModel bundle at path: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp4ljny06e
+I0000 00:00:1786515452.598435 63091997 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 150003 microseconds.
+I0000 00:00:1786515452.627158 63091997 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+I0000 00:00:1786515452.711456 63091997 flatbuffer_export.cc:4302] Estimated count of arithmetic ops: 27.525 M  ops, equivalently 13.762 M  MACs
+
+converting dynamic-range int8 ...
+Saved artifact at '/var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp7kzz0g5o'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(1, 96, 96, 3), dtype=tf.float32, name='image')
+Output Type:
+  Dict[['cls', TensorSpec(shape=(1, 5), dtype=tf.float32, name=None)], ['portion', TensorSpec(shape=(1, 3), dtype=tf.float32, name=None)]]
+Captures:
+  4841629520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668496: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669264: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669072: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669456: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668304: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668688: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670224: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670032: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670416: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668112: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669648: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671184: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670992: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671376: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668880: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670608: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672144: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671952: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672336: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669840: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671568: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670800: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672528: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671760: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672720: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842681744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842681168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+W0000 00:00:1786515454.016967 63091997 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1786515454.017005 63091997 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1786515454.017120 63091997 reader.cc:83] Reading SavedModel from: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp7kzz0g5o
+I0000 00:00:1786515454.019091 63091997 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1786515454.019099 63091997 reader.cc:147] Reading SavedModel debug info (if present) from: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp7kzz0g5o
+I0000 00:00:1786515454.037432 63091997 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1786515454.136460 63091997 loader.cc:220] Running initialization op on SavedModel bundle at path: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp7kzz0g5o
+I0000 00:00:1786515454.164954 63091997 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 147836 microseconds.
+I0000 00:00:1786515454.289788 63091997 flatbuffer_export.cc:4302] Estimated count of arithmetic ops: 27.525 M  ops, equivalently 13.762 M  MACs
+converting full int8 (calibrating on 300 augmented training images) ...
+Saved artifact at '/var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp_ctjd918'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(1, 96, 96, 3), dtype=tf.float32, name='image')
+Output Type:
+  Dict[['cls', TensorSpec(shape=(1, 5), dtype=tf.float32, name=None)], ['portion', TensorSpec(shape=(1, 3), dtype=tf.float32, name=None)]]
+Captures:
+  4841629520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841629904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841630864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841631824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841632784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841633744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841634704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4841635664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668496: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669264: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669072: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669456: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668304: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668688: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670224: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670032: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670416: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668112: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669648: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671184: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670992: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671376: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842668880: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670608: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672144: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671952: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672336: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842669840: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671568: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842670800: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672528: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842671760: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842672720: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842673680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842674640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842675600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842676560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842678288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842679632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842677520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842681744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842680208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  4842681168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+/Users/lukevalerio/miniconda3/lib/python3.13/site-packages/tensorflow/lite/python/convert.py:846: UserWarning: Statistics for quantized inputs were expected, but not specified; continuing anyway.
+  warnings.warn(
+W0000 00:00:1786515455.898101 63091997 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1786515455.898113 63091997 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1786515455.898210 63091997 reader.cc:83] Reading SavedModel from: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp_ctjd918
+I0000 00:00:1786515455.899962 63091997 reader.cc:52] Reading meta graph with tags { serve }
+I0000 00:00:1786515455.899968 63091997 reader.cc:147] Reading SavedModel debug info (if present) from: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp_ctjd918
+I0000 00:00:1786515455.917062 63091997 loader.cc:236] Restoring SavedModel bundle.
+I0000 00:00:1786515456.013627 63091997 loader.cc:220] Running initialization op on SavedModel bundle at path: /var/folders/_6/dlf_px9j4jl_nlqtql_xp0jr0000gq/T/tmp_ctjd918
+I0000 00:00:1786515456.042056 63091997 loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 143849 microseconds.
+I0000 00:00:1786515456.152414 63091997 flatbuffer_export.cc:4302] Estimated count of arithmetic ops: 27.525 M  ops, equivalently 13.762 M  MACs
+fully_quantize: 0, inference_type: 6, input_inference_type: INT8, output_inference_type: INT8
+I0000 00:00:1786515458.230210 63091997 flatbuffer_export.cc:4302] Estimated count of arithmetic ops: 27.525 M  ops, equivalently 13.762 M  MACs
+W0000 00:00:1786515458.230226 63091997 flatbuffer_export.cc:3851] Skipping runtime version metadata in the model. This will be generated by the exporter.
+/Users/lukevalerio/miniconda3/lib/python3.13/site-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+evaluating fp32_tflite (621,956 bytes) ...
+  [fp32_tflite] macro-F1 0.5511 | cls acc 0.5610 | portion acc 0.9303 | ord err 0.0700 | off-by-2 0.0003
+
+evaluating drq (205,752 bytes) ...
+  [drq] macro-F1 0.5504 | cls acc 0.5600 | portion acc 0.9323 | ord err 0.0680 | off-by-2 0.0003
+
+evaluating int8 (221,888 bytes) ...
+  [int8] macro-F1 0.5493 | cls acc 0.5593 | portion acc 0.9307 | ord err 0.0697 | off-by-2 0.0003
+
+========================================================================================
+COMPRESSION COMPARISON  [a10_pool]   test n=3000
+========================================================================================
+variant         size KB  vs fp32   cls F1  cls acc  por acc  ord err
+----------------------------------------------------------------------------------------
+FP32 (keras)          -        -   0.5511   0.5610   0.9303   0.0700
+fp32_tflite       607.4    1.00x   0.5511   0.5610   0.9303   0.0700
+drq               200.9    0.33x   0.5504   0.5600   0.9323   0.0680
+int8              216.7    0.36x   0.5493   0.5593   0.9307   0.0697
+========================================================================================
+int8 macro-F1 delta vs FP32: -0.0018 (within the 5% budget)
+
+wrote /Users/lukevalerio/Documents/TinyML/FinalProject/results/quantization_a10_pool.json

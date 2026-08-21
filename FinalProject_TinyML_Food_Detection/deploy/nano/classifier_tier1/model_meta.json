@@ -1,0 +1,16 @@
+{
+ "model": "results/models/real_cw_int8.tflite",
+ "model_bytes": 221888,
+ "input_scale": 0.003921568859368563,
+ "input_zero_point": -128,
+ "input_shape": [
+  1,
+  96,
+  96,
+  3
+ ],
+ "test_image_cls": 0,
+ "test_image_portion": 1,
+ "cls_output_index": 67,
+ "portion_output_index": 70
+}

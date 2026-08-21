@@ -1,0 +1,74 @@
+============================================================================================
+TinyML FOOD DETECTION + PORTION ESTIMATION -- RESULTS
+Arduino Nano 33 BLE Sense (nRF52840) + OV7675, 96x96 RGB
+============================================================================================
+
+
+[1] SECTION 5a GATE -- RAM COEXISTENCE
+--------------------------------------------------------------------------------------------
+Fixed overhead (mbed OS + TFLM + Serial): 51,792 bytes
+mode     res          arena    frame   globals     free  status
+gray     qcif        20,000   25,344    97,136  165,008  OK
+gray     qcif        60,000   25,344   137,136  125,008  OK
+gray     qcif       100,000   25,344   177,136   85,008  OK
+gray     qcif       140,000   25,344   217,136   45,008  OK
+gray     qcif       170,000   25,344   247,136   15,008  TIGHT
+gray     qcif       190,000   25,344         -        -  COMPILE_FAIL
+rgb565   qcif        60,000   50,688   162,480   99,664  OK
+rgb565   qcif       100,000   50,688   202,480   59,664  OK
+rgb565   qcif       140,000   50,688   242,480   19,664  TIGHT
+gray     qqvga      140,000   19,200   210,992   51,152  OK
+gray     qqvga      170,000   19,200   240,992   21,152  TIGHT
+
+On-device confirmation (real hardware):
+  camera init        : OK
+  frame buffer       : 50,688 bytes (rgb565 qcif)
+  arena requested    : 90,000 bytes
+  largest free block : 56,988 bytes
+  status             : OK
+
+
+[2] COMPRESSION vs ACCURACY  [real_cw]  test n=3000
+--------------------------------------------------------------------------------------------
+variant            size KB   ratio  macro-F1   cls acc  portion acc   ord err  off-by-2
+FP32 (Keras)             -       -    0.6462    0.6460       0.9237    0.0763    0.0000
+fp32_tflite          607.4   1.00x    0.6462    0.6460       0.9237    0.0763    0.0000
+drq                  200.9   0.33x    0.6453    0.6450       0.9240    0.0760    0.0000
+int8                 216.7   0.36x    0.6432    0.6433       0.9187    0.0813    0.0000
+
+int8 vs FP32 macro-F1 delta: -0.0030
+
+Per-class F1 (int8):
+  chicken    0.5094
+  broccoli   0.9690
+  rice       0.5569
+  beef       0.6616
+  potato     0.5190
+
+Class confusion (int8, rows = truth):
+            chicken broccoli     rice     beef   potato    recall
+chicken         338        3       33      140       86    0.563
+broccoli          0      593        0        1        6    0.988
+rice             75       20      296       13      196    0.493
+beef            187        3       13      389        8    0.648
+potato          127        5      121       33      314    0.523
+
+Portion confusion (int8, rows = truth):
+            small   medium    large    recall
+small        1001       21        0    0.979
+medium         85      906       38    0.880
+large           0      100      849    0.895
+
+
+[3] ON-DEVICE MEASUREMENTS (nRF52840 @ 64 MHz)
+--------------------------------------------------------------------------------------------
+  model size (flash)   : 221,888 bytes
+  tensor arena used    : 113,516 bytes
+  arena requested      : 120,000 bytes
+  total sketch flash   : 500,648 bytes (50.9% of 983,040)
+  static RAM           : 171,048 bytes of 262,144
+  largest free block   : 54,284 bytes
+  inference latency    : 1082.3 ms mean, 1083.8 ms max (20 runs)
+  device/host agreement: OK (pred cls=0 exp=0, portion=1/1)
+
+============================================================================================

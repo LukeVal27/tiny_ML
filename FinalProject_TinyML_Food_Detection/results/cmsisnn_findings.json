@@ -1,0 +1,30 @@
+{
+ "task": "C \u2014 CMSIS-NN investigation (compile-only, no flash cycles)",
+ "conclusion": "CMSIS-NN optimized kernels were ALREADY active in the TFLM_New build. -DARM_MATH_DSP would be a no-op.",
+ "evidence": {
+  "cmsis_nn_s8_symbols_linked": 26,
+  "total_dsp_simd_instructions": 251,
+  "dsp_instr_by_function": {
+   "arm_nn_mat_mult_nt_t_s8": 110,
+   "arm_nn_mat_mult_kernel_s8_s16": 30,
+   "arm_nn_mat_mult_kernel_s16": 30,
+   "arm_depthwise_conv_s8_opt": 21,
+   "arm_nn_vec_mat_mult_t_s16": 18,
+   "arm_nn_vec_mat_mult_t_s8": 13,
+   "arm_convolve_s8": 7
+  },
+  "note": "DSP SIMD instructions inside the kernels prove ARM_MATH_DSP was defined at compile time; the mbed cortex-m4 core sets __ARM_FEATURE_DSP and CMSIS derives ARM_MATH_DSP from it."
+ },
+ "disproven": [
+  "research Q6.3: precompiled=full blocking compilation \u2014 no .a is shipped and the build logged 'Precompiled library not found', so sources compiled",
+  "research Q6.1 duplicate-kernel conflict \u2014 library ships only kernels/cmsis_nn/conv.cpp, no reference duplicate",
+  "my own earlier spot-check of arm_depthwise_conv_s8 showing 0 DSP instrs \u2014 the work lives in arm_depthwise_conv_s8_opt and the mat_mult helpers"
+ ],
+ "open_question": "With CMSIS-NN active, TFLM_New measured 1092437 us vs Harvard reference-kernel 1076311 us \u2014 no speedup. The 3-5x expectation did not materialise, so the bottleneck is not kernel math selection.",
+ "flash_cycles_spent": 0,
+ "ruled_out_do_not_retest": [
+  "-DARM_MATH_DSP / -DCMSIS_NN build flags",
+  "precompiled=false edit",
+  "removing reference kernel duplicates"
+ ]
+}

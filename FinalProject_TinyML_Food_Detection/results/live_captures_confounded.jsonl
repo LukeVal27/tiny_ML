@@ -1,0 +1,69 @@
+{"ts": "2026-08-18T13:18:02", "truth": "broccoli", "pred": "broccoli", "cls_conf": 0.9297, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 352325, "preprocess_us": 68183, "infer_us": 1083097, "total_us": 1503605}
+{"ts": "2026-08-18T13:18:24", "truth": "broccoli", "pred": "broccoli", "cls_conf": 0.8594, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 325955, "preprocess_us": 68296, "infer_us": 1083210, "total_us": 1477461}
+{"ts": "2026-08-18T13:18:39", "truth": "broccoli", "pred": "broccoli", "cls_conf": 0.8672, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 342925, "preprocess_us": 68605, "infer_us": 1082859, "total_us": 1494389}
+{"ts": "2026-08-18T13:18:56", "truth": "broccoli", "pred": "broccoli", "cls_conf": 0.8672, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 459857, "preprocess_us": 68620, "infer_us": 1083136, "total_us": 1611613}
+{"ts": "2026-08-18T13:19:21", "truth": "broccoli", "pred": "broccoli", "cls_conf": 0.8203, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 253001, "preprocess_us": 68601, "infer_us": 1083091, "total_us": 1404693}
+{"ts": "2026-08-18T13:28:46", "truth": "rice", "pred": "rice", "cls_conf": 0.5391, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 336749, "preprocess_us": 68635, "infer_us": 1082611, "total_us": 1487995}
+{"ts": "2026-08-18T13:29:02", "truth": "rice", "pred": "broccoli", "cls_conf": 0.8945, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 477417, "preprocess_us": 68503, "infer_us": 1083078, "total_us": 1628998}
+{"ts": "2026-08-18T13:29:13", "truth": "rice", "pred": "broccoli", "cls_conf": 0.9102, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 539892, "preprocess_us": 68761, "infer_us": 1082627, "total_us": 1691280}
+{"ts": "2026-08-18T13:29:19", "truth": "rice", "pred": "broccoli", "cls_conf": 0.4648, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 212231, "preprocess_us": 68646, "infer_us": 1082547, "total_us": 1363424}
+{"ts": "2026-08-18T13:29:41", "truth": "rice", "pred": "rice", "cls_conf": 0.6445, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 235503, "preprocess_us": 68995, "infer_us": 1082862, "total_us": 1387360}
+{"ts": "2026-08-18T13:42:36", "truth": "", "pred": "broccoli", "cls_conf": 0.9648, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:43:06", "truth": "", "pred": "broccoli", "cls_conf": 0.918, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:43:06", "truth": "", "pred": "broccoli", "cls_conf": 0.3945, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:43:10", "truth": "", "pred": "broccoli", "cls_conf": 0.3867, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:43:43", "truth": "", "pred": "broccoli", "cls_conf": 0.6875, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:44:45", "truth": "", "pred": "rice", "cls_conf": 0.7539, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:45:11", "truth": "", "pred": "broccoli", "cls_conf": 0.5195, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:49:00", "truth": "", "pred": "broccoli", "cls_conf": 0.9453, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:52:13", "truth": "", "pred": "broccoli", "cls_conf": 0.7852, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:53:04", "truth": "", "pred": "broccoli", "cls_conf": 0.7891, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:54:00", "truth": "", "pred": "broccoli", "cls_conf": 0.7109, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T13:59:24", "truth": "", "pred": "rice", "cls_conf": 0.7539, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:00:23", "truth": "", "pred": "broccoli", "cls_conf": 0.6523, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:01:52", "truth": "", "pred": "rice", "cls_conf": 0.6719, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:02:10", "truth": "", "pred": "rice", "cls_conf": 0.75, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:03:32", "truth": "", "pred": "rice", "cls_conf": 0.7344, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:03:48", "truth": "", "pred": "broccoli", "cls_conf": 0.375, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:16:49", "truth": "", "pred": "broccoli", "cls_conf": 0.9922, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:18:16", "truth": "", "pred": "broccoli", "cls_conf": 0.9297, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:19:30", "truth": "", "pred": "rice", "cls_conf": 0.707, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:41:32", "truth": "", "pred": "rice", "cls_conf": 0.3516, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:42:01", "truth": "", "pred": "rice", "cls_conf": 0.2695, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:42:48", "truth": "beef", "pred": "rice", "cls_conf": 0.3711, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 345328, "preprocess_us": 67640, "infer_us": 1082370, "total_us": 1495338}
+{"ts": "2026-08-18T14:42:52", "truth": "beef", "pred": "rice", "cls_conf": 0.4531, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 315512, "preprocess_us": 67799, "infer_us": 1082692, "total_us": 1466003}
+{"ts": "2026-08-18T14:42:58", "truth": "beef", "pred": "rice", "cls_conf": 0.5273, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 237840, "preprocess_us": 67663, "infer_us": 1082954, "total_us": 1388457}
+{"ts": "2026-08-18T14:43:40", "truth": "beef", "pred": "broccoli", "cls_conf": 0.9766, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 271903, "preprocess_us": 67606, "infer_us": 1082515, "total_us": 1422024}
+{"ts": "2026-08-18T14:43:55", "truth": "beef", "pred": "broccoli", "cls_conf": 0.4648, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 242500, "preprocess_us": 67425, "infer_us": 1083113, "total_us": 1393038}
+{"ts": "2026-08-18T14:44:00", "truth": "beef", "pred": "rice", "cls_conf": 0.4023, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 341832, "preprocess_us": 67717, "infer_us": 1082952, "total_us": 1492501}
+{"ts": "2026-08-18T14:44:03", "truth": "beef", "pred": "rice", "cls_conf": 0.3828, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 415914, "preprocess_us": 67604, "infer_us": 1082938, "total_us": 1566456}
+{"ts": "2026-08-18T14:44:57", "truth": "", "pred": "broccoli", "cls_conf": 0.543, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:45:13", "truth": "", "pred": "broccoli", "cls_conf": 0.3672, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 563097, "preprocess_us": 67279, "infer_us": 1082488, "total_us": 1712864}
+{"ts": "2026-08-18T14:45:19", "truth": "beef", "pred": "broccoli", "cls_conf": 0.5039, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 306293, "preprocess_us": 67180, "infer_us": 1083167, "total_us": 1456640}
+{"ts": "2026-08-18T14:45:23", "truth": "beef", "pred": "broccoli", "cls_conf": 0.6836, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 364361, "preprocess_us": 67170, "infer_us": 1083033, "total_us": 1514564}
+{"ts": "2026-08-18T14:45:28", "truth": "beef", "pred": "broccoli", "cls_conf": 0.918, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 433657, "preprocess_us": 67186, "infer_us": 1083095, "total_us": 1583938}
+{"ts": "2026-08-18T14:52:59", "truth": "beef", "pred": "broccoli", "cls_conf": 0.8945, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 484770, "preprocess_us": 67511, "infer_us": 1083105, "total_us": 1635386}
+{"ts": "2026-08-18T14:53:12", "truth": "beef", "pred": "broccoli", "cls_conf": 0.8125, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 308489, "preprocess_us": 67589, "infer_us": 1082828, "total_us": 1458906}
+{"ts": "2026-08-18T14:53:23", "truth": "beef", "pred": "broccoli", "cls_conf": 0.9961, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 397384, "preprocess_us": 67443, "infer_us": 1082836, "total_us": 1547663}
+{"ts": "2026-08-18T14:53:31", "truth": "broccoli", "pred": "broccoli", "cls_conf": 0.9922, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 285207, "preprocess_us": 67625, "infer_us": 1082792, "total_us": 1435624}
+{"ts": "2026-08-18T14:55:52", "truth": "", "pred": "rice", "cls_conf": 0.2656, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:56:08", "truth": "", "pred": "broccoli", "cls_conf": 0.332, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:56:51", "truth": "", "pred": "broccoli", "cls_conf": 0.6172, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:57:03", "truth": "", "pred": "broccoli", "cls_conf": 0.4062, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:57:03", "truth": "", "pred": "broccoli", "cls_conf": 0.5039, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:58:37", "truth": "", "pred": "rice", "cls_conf": 0.4219, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T14:59:24", "truth": "", "pred": "rice", "cls_conf": 0.5977, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:00:20", "truth": "", "pred": "chicken", "cls_conf": 0.4023, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:00:44", "truth": "", "pred": "chicken", "cls_conf": 0.4023, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:01:25", "truth": "", "pred": "rice", "cls_conf": 0.6328, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:02:20", "truth": "beef", "pred": "rice", "cls_conf": 0.4687, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 460621, "preprocess_us": 67443, "infer_us": 1082963, "total_us": 1611027}
+{"ts": "2026-08-18T15:02:25", "truth": "beef", "pred": "rice", "cls_conf": 0.4766, "portion": "large", "portion_conf": 0.9961, "mass_range": ">180g", "capture_us": 410756, "preprocess_us": 67559, "infer_us": 1082706, "total_us": 1561021}
+{"ts": "2026-08-18T15:03:19", "truth": "", "pred": "rice", "cls_conf": 0.6602, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:03:24", "truth": "", "pred": "rice", "cls_conf": 0.6406, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:04:27", "truth": "", "pred": "rice", "cls_conf": 0.4102, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:04:39", "truth": "", "pred": "rice", "cls_conf": 0.5039, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:04:42", "truth": "", "pred": "rice", "cls_conf": 0.4844, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:04:44", "truth": "", "pred": "rice", "cls_conf": 0.3906, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:04:47", "truth": "", "pred": "rice", "cls_conf": 0.5586, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:04:50", "truth": "", "pred": "rice", "cls_conf": 0.5156, "portion": "large", "mass_range": ">180g", "source": "camera_view"}
+{"ts": "2026-08-18T15:04:51", "truth": "", "pred": "rice", "cls_conf": 0.4297, "portion": "large", "mass_range": ">180g", "source": "camera_view"}

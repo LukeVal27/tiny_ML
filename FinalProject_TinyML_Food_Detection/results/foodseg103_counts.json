@@ -1,0 +1,93 @@
+{
+ "mapping": {
+  "87": "broccoli",
+  "66": "rice",
+  "70": "potato",
+  "48": "chicken",
+  "46": "beef"
+ },
+ "excluded": {
+  "3": "french fries (kept out of `potato`)"
+ },
+ "images_containing_class": {
+  "train": {
+   "beef": 728,
+   "broccoli": 704,
+   "chicken": 848,
+   "potato": 785,
+   "rice": 464
+  },
+  "test": {
+   "beef": 337,
+   "broccoli": 309,
+   "chicken": 394,
+   "potato": 306,
+   "rice": 206
+  }
+ },
+ "cutouts_written": {
+  "train": {
+   "beef": 717,
+   "broccoli": 689,
+   "chicken": 838,
+   "potato": 773,
+   "rice": 457
+  },
+  "test": {
+   "beef": 332,
+   "broccoli": 297,
+   "chicken": 388,
+   "potato": 300,
+   "rice": 205
+  }
+ },
+ "rejected": {
+  "potato:too_small": 14,
+  "beef:too_small": 12,
+  "rice:too_small": 5,
+  "chicken:too_sparse": 9,
+  "rice:too_sparse": 3,
+  "broccoli:too_small": 23,
+  "chicken:too_small": 7,
+  "potato:too_sparse": 4,
+  "beef:too_sparse": 4,
+  "broccoli:too_sparse": 4
+ },
+ "params": {
+  "per_class": 900,
+  "min_px": 56,
+  "min_fill": 0.12
+ },
+ "area_diagnostics": {
+  "beef": {
+   "n": 1065,
+   "median_share_of_image": 0.1746,
+   "median_share_of_food": 0.3442,
+   "frac_where_share_of_food_over_0.9": 0.0047
+  },
+  "broccoli": {
+   "n": 1013,
+   "median_share_of_image": 0.1126,
+   "median_share_of_food": 0.2056,
+   "frac_where_share_of_food_over_0.9": 0.002
+  },
+  "chicken": {
+   "n": 1242,
+   "median_share_of_image": 0.2019,
+   "median_share_of_food": 0.3915,
+   "frac_where_share_of_food_over_0.9": 0.004
+  },
+  "potato": {
+   "n": 1091,
+   "median_share_of_image": 0.1292,
+   "median_share_of_food": 0.2474,
+   "frac_where_share_of_food_over_0.9": 0.0
+  },
+  "rice": {
+   "n": 670,
+   "median_share_of_image": 0.1411,
+   "median_share_of_food": 0.2603,
+   "frac_where_share_of_food_over_0.9": 0.0
+  }
+ }
+}

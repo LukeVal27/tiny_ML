@@ -1,0 +1,17 @@
+tier thresholds reused: small f<0.156  medium <0.351  (513.2 g per unit fraction)
+
+  train/chicken: 3000 composed from 838 cutouts (skipped 45)
+  train/broccoli: 3000 composed from 689 cutouts (skipped 41)
+  train/rice: 3000 composed from 457 cutouts (skipped 66)
+  train/beef: 3000 composed from 717 cutouts (skipped 32)
+  train/potato: 3000 composed from 773 cutouts (skipped 32)
+  test/chicken: 600 composed from 388 cutouts (skipped 49)
+  test/broccoli: 600 composed from 297 cutouts (skipped 44)
+  test/rice: 600 composed from 205 cutouts (skipped 73)
+  test/beef: 600 composed from 332 cutouts (skipped 47)
+  test/potato: 600 composed from 300 cutouts (skipped 38)
+
+total composed: 18000
+  train tiers s/m/l: [5054, 5051, 4895]
+  test tiers s/m/l: [1022, 1029, 949]
+written to /Users/lukevalerio/Documents/TinyML/FinalProject/data/foodseg103_real

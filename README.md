@@ -64,3 +64,20 @@ Public Edge Impulse project: https://studio.edgeimpulse.com/public/1084899/live
 Ensemble accuracy is 1.00 on the held-out test set in float32. After pruning to 79.44% sparsity and converting to int8, the branches score 0.9901, 0.9322, and 0.9220, and the meta-classifier scores 0.8948. Each branch shrinks from 165.29 KB to 44.55 KB.
 
 **Authorship:** The Edge Impulse project, data collection, model training, Arduino deployment, and the Part I serial evidence were done by Luke Valerio. Claude (an AI assistant) prepared the Python environment, executed the Part II notebook, generated the compressed models and C arrays, verified the sketch compiles, and drafted the report text, which was then reviewed by Luke Valerio.
+
+## Final Project
+
+Food detection and portion estimation on the Nano 33 BLE Sense with an OV7675 camera. One 96×96 frame produces two predictions — a 5-way food class and a 3-tier ordinal portion size — from a single depthwise-separable backbone with two heads that pool differently: max pooling for presence, average pooling for extent. Trained on FoodSeg103 mask cutouts composited onto plates of known area fraction, so portion labels are exact by construction rather than estimated.
+
+| File | Description |
+|------|-------------|
+| [`FinalProject_TinyML_Food_Detection/README.md`](FinalProject_TinyML_Food_Detection/README.md) | Full project README — results, dataset links, and the exact commands to reproduce every number. |
+| [`FinalProject_TinyML_Food_Detection/EE446_final_presentation.pdf`](FinalProject_TinyML_Food_Detection/EE446_final_presentation.pdf) | The presented slide deck, 10 slides against the six required topics. |
+| [`FinalProject_TinyML_Food_Detection/deploy/nano/classifier_tier1`](FinalProject_TinyML_Food_Detection/deploy/nano/classifier_tier1) | The deployed Arduino sketch, with the int8 model as a C array. Also contains the camera diagnostic and live-view sketches. |
+| [`FinalProject_TinyML_Food_Detection/model`](FinalProject_TinyML_Food_Detection/model) · [`train`](FinalProject_TinyML_Food_Detection/train) · [`compress`](FinalProject_TinyML_Food_Detection/compress) | Architecture, training (ordinal and class-weighted losses), and int8 post-training quantization. |
+| [`FinalProject_TinyML_Food_Detection/harness`](FinalProject_TinyML_Food_Detection/harness) | Hardware-in-the-loop tooling: flash-and-measure, RAM sweep, labelled live capture, live dashboard, and the portion-failure probe. |
+| [`FinalProject_TinyML_Food_Detection/results`](FinalProject_TinyML_Food_Detection/results) | Every measured number — metrics JSON, device telemetry, capture logs, confusion figures, checkpoints, and the TFLite models. |
+
+The float32 baseline reaches 0.6462 macro-F1 and 0.9237 portion accuracy on a 3,000-image held-out test set. Full int8 quantization costs 0.0030 macro-F1 while compressing the model 2.80×, from 621,956 B to 221,888 B. On hardware the deployed model uses a 113,516 B tensor arena and 50.9% of flash, and runs in 1,082 ms per inference. Across 75 labelled live captures through the OV7675 it scores 0.6667 accuracy and 0.6676 macro-F1 over the four classes with on-device samples — slightly better than its own lab benchmark. The portion head does not survive the move to real camera input: it returned `large` on all 75 captures at the int8 softmax ceiling, and the failure is documented rather than hidden.
+
+**Authorship:** Model design, training, quantization, hardware bring-up, food data collection, and all on-device evaluation were carried out by Luke Valerio and Daniel Yang. Claude (an AI assistant) assisted with code, analysis, the diagnostic tooling, and preparing the slide deck and this repository, under their direction and review.

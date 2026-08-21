@@ -1,0 +1,21 @@
+/Users/lukevalerio/miniconda3/lib/python3.13/site-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+train 12712 | val 2288 | test 3000
+class weights: {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0}
+model            : food_tinyml
+input            : (96, 96, 3)
+parameters       : 157,512
+est. int8 weights: 153.8 KB
+peak activations : 72.0 KB  (at layer 'stem_bn')
+est. arena floor : 72.0 KB + TFLM overhead (~4-10 KB)
+Epoch 1/40
+199/199 - 80s - 402ms/step - cls_acc: 0.5383 - cls_loss: 1.1960 - cls_macro_f1: 0.5329 - loss: 1.5564 - portion_acc: 0.7764 - portion_loss: 0.7206 - portion_ordinal_error: 0.2368 - val_cls_acc: 0.2190 - val_cls_loss: 1.7092 - val_cls_macro_f1: 0.0719 - val_loss: 3.8356 - val_portion_acc: 0.3304 - val_portion_loss: 4.2421 - val_portion_ordinal_error: 1.0166 - learning_rate: 0.0020
+Epoch 2/40
+199/199 - 84s - 422ms/step - cls_acc: 0.5644 - cls_loss: 1.1940 - cls_macro_f1: 0.5615 - loss: 1.4440 - portion_acc: 0.8473 - portion_loss: 0.5001 - portion_ordinal_error: 0.1543 - val_cls_acc: 0.2238 - val_cls_loss: 1.7698 - val_cls_macro_f1: 0.0819 - val_loss: 2.9239 - val_portion_acc: 0.4126 - val_portion_loss: 2.2964 - val_portion_ordinal_error: 0.6919 - learning_rate: 0.0020
+Epoch 3/40
+199/199 - 46s - 229ms/step - cls_acc: 0.5769 - cls_loss: 1.1875 - cls_macro_f1: 0.5739 - loss: 1.4013 - portion_acc: 0.8678 - portion_loss: 0.4273 - portion_ordinal_error: 0.1332 - val_cls_acc: 0.3431 - val_cls_loss: 1.5559 - val_cls_macro_f1: 0.2689 - val_loss: 1.9194 - val_portion_acc: 0.8309 - val_portion_loss: 0.7215 - val_portion_ordinal_error: 0.1875 - learning_rate: 0.0020
+Epoch 4/40
+199/199 - 49s - 246ms/step - cls_acc: 0.5807 - cls_loss: 1.1746 - cls_macro_f1: 0.5781 - loss: 1.3799 - portion_acc: 0.8759 - portion_loss: 0.4094 - portion_ordinal_error: 0.1252 - val_cls_acc: 0.3628 - val_cls_loss: 1.7971 - val_cls_macro_f1: 0.2919 - val_loss: 2.1326 - val_portion_acc: 0.7867 - val_portion_loss: 0.6536 - val_portion_ordinal_error: 0.2142 - learning_rate: 0.0020
+Epoch 5/40
+199/199 - 48s - 243ms/step - cls_acc: 0.5737 - cls_loss: 1.1910 - cls_macro_f1: 0.5715 - loss: 1.3827 - portion_acc: 0.8831 - portion_loss: 0.3830 - portion_ordinal_error: 0.1174 - val_cls_acc: 0.2277 - val_cls_loss: 2.4634 - val_cls_macro_f1: 0.0923 - val_loss: 3.1478 - val_portion_acc: 0.6031 - val_portion_loss: 1.3392 - val_portion_ordinal_error: 0.3982 - learning_rate: 0.0020
+Epoch 6/40

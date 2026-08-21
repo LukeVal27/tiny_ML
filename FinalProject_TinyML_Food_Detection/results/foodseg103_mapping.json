@@ -1,0 +1,13 @@
+{
+ "mapping": {
+  "87": "broccoli",
+  "66": "rice",
+  "70": "potato",
+  "48": "chicken",
+  "46": "beef"
+ },
+ "excluded": {
+  "3": "french fries (kept out of `potato`)"
+ },
+ "note": "beef == steak (no beef class exists); chicken == chicken duck (merged label). Deliberate, logged decisions."
+}

@@ -1,0 +1,35 @@
+Running 11 compile configurations (~75 s each, ~13 min total)
+
+[1/11] arena= 20,000 fmt=gray   res=qcif ... OK    globals=97,136 free=165,008 flash=239,480
+[2/11] arena= 60,000 fmt=gray   res=qcif ... OK    globals=137,136 free=125,008 flash=239,192
+[3/11] arena=100,000 fmt=gray   res=qcif ... OK    globals=177,136 free=85,008 flash=239,192
+[4/11] arena=140,000 fmt=gray   res=qcif ... OK    globals=217,136 free=45,008 flash=239,192
+[5/11] arena=170,000 fmt=gray   res=qcif ... TIGHT globals=247,136 free=15,008 flash=239,480
+[6/11] arena=190,000 fmt=gray   res=qcif ... COMPILE_FAIL (Error during build: exit status 1)
+[7/11] arena= 60,000 fmt=rgb565 res=qcif ... OK    globals=162,480 free=99,664 flash=239,192
+[8/11] arena=100,000 fmt=rgb565 res=qcif ... OK    globals=202,480 free=59,664 flash=239,192
+[9/11] arena=140,000 fmt=rgb565 res=qcif ... TIGHT globals=242,480 free=19,664 flash=239,480
+[10/11] arena=140,000 fmt=gray   res=qqvga ... OK    globals=210,992 free=51,152 flash=239,480
+[11/11] arena=170,000 fmt=gray   res=qqvga ... TIGHT globals=240,992 free=21,152 flash=239,192
+
+==============================================================================
+SECTION 5a GATE - STATIC COMPILE SWEEP
+==============================================================================
+mode    res        arena   frame  globals     free    flash  status
+------------------------------------------------------------------------------
+gray    qcif      20,000  25,344   97,136  165,008  239,480  OK
+gray    qcif      60,000  25,344  137,136  125,008  239,192  OK
+gray    qcif     100,000  25,344  177,136   85,008  239,192  OK
+gray    qcif     140,000  25,344  217,136   45,008  239,192  OK
+gray    qcif     170,000  25,344  247,136   15,008  239,480  TIGHT
+gray    qcif     190,000  25,344        -        -        -  COMPILE_FAIL
+rgb565  qcif      60,000  50,688  162,480   99,664  239,192  OK
+rgb565  qcif     100,000  50,688  202,480   59,664  239,192  OK
+rgb565  qcif     140,000  50,688  242,480   19,664  239,480  TIGHT
+gray    qqvga    140,000  19,200  210,992   51,152  239,480  OK
+gray    qqvga    170,000  19,200  240,992   21,152  239,192  TIGHT
+------------------------------------------------------------------------------
+Fixed overhead (mbed OS + TFLM + Serial): ~51,792 bytes
+  gray    qcif: max viable arena ~= 160,432 bytes (verified to 140,000)
+  rgb565  qcif: max viable arena ~= 135,088 bytes (verified to 100,000)
+==============================================================================

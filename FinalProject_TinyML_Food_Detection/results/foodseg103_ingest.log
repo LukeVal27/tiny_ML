@@ -1,0 +1,47 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/4983 [00:00<?, ? examples/s]Generating train split:   2%|▏         | 100/4983 [00:00<00:10, 481.80 examples/s]Generating train split:  12%|█▏        | 600/4983 [00:00<00:02, 2028.47 examples/s]Generating train split:  24%|██▍       | 1200/4983 [00:00<00:01, 3119.93 examples/s]Generating train split:  35%|███▌      | 1761/4983 [00:00<00:01, 2869.88 examples/s]Generating train split:  45%|████▌     | 2261/4983 [00:00<00:00, 3167.34 examples/s]Generating train split:  55%|█████▌    | 2761/4983 [00:00<00:00, 3419.50 examples/s]Generating train split:  63%|██████▎   | 3161/4983 [00:01<00:00, 3390.39 examples/s]Generating train split:  75%|███████▍  | 3722/4983 [00:01<00:00, 2604.87 examples/s]Generating train split:  85%|████████▍ | 4222/4983 [00:01<00:00, 2987.12 examples/s]Generating train split:  97%|█████████▋| 4822/4983 [00:01<00:00, 3516.45 examples/s]Generating train split: 100%|██████████| 4983/4983 [00:01<00:00, 3084.85 examples/s]
+Generating validation split:   0%|          | 0/2135 [00:00<?, ? examples/s]Generating validation split:  33%|███▎      | 700/2135 [00:00<00:00, 5687.59 examples/s]Generating validation split: 100%|██████████| 2135/2135 [00:00<00:00, 6122.52 examples/s]Generating validation split: 100%|██████████| 2135/2135 [00:00<00:00, 6036.89 examples/s]
+[train] 4983 rows
+[train] 2342 rows contain one of our 5 classes
+  train 0/2342 kept={('train', 'chicken'): 1, ('train', 'rice'): 1}
+  train 200/2342 kept={('train', 'chicken'): 70, ('train', 'rice'): 44, ('train', 'potato'): 55, ('train', 'broccoli'): 65, ('train', 'beef'): 56}
+  train 400/2342 kept={('train', 'chicken'): 147, ('train', 'rice'): 86, ('train', 'potato'): 129, ('train', 'broccoli'): 120, ('train', 'beef'): 113}
+  train 600/2342 kept={('train', 'chicken'): 208, ('train', 'rice'): 127, ('train', 'potato'): 185, ('train', 'broccoli'): 167, ('train', 'beef'): 182}
+  train 800/2342 kept={('train', 'chicken'): 273, ('train', 'rice'): 170, ('train', 'potato'): 251, ('train', 'broccoli'): 224, ('train', 'beef'): 240}
+  train 1000/2342 kept={('train', 'chicken'): 337, ('train', 'rice'): 197, ('train', 'potato'): 318, ('train', 'broccoli'): 279, ('train', 'beef'): 313}
+  train 1200/2342 kept={('train', 'chicken'): 412, ('train', 'rice'): 235, ('train', 'potato'): 392, ('train', 'broccoli'): 342, ('train', 'beef'): 369}
+  train 1400/2342 kept={('train', 'chicken'): 500, ('train', 'rice'): 268, ('train', 'potato'): 467, ('train', 'broccoli'): 408, ('train', 'beef'): 424}
+  train 1600/2342 kept={('train', 'chicken'): 566, ('train', 'rice'): 317, ('train', 'potato'): 542, ('train', 'broccoli'): 462, ('train', 'beef'): 495}
+  train 1800/2342 kept={('train', 'chicken'): 633, ('train', 'rice'): 352, ('train', 'potato'): 599, ('train', 'broccoli'): 538, ('train', 'beef'): 562}
+  train 2000/2342 kept={('train', 'chicken'): 707, ('train', 'rice'): 392, ('train', 'potato'): 670, ('train', 'broccoli'): 600, ('train', 'beef'): 622}
+  train 2200/2342 kept={('train', 'chicken'): 786, ('train', 'rice'): 421, ('train', 'potato'): 741, ('train', 'broccoli'): 663, ('train', 'beef'): 686}
+[validation] 2135 rows
+[validation] 1037 rows contain one of our 5 classes
+  validation 0/1037 kept={('train', 'chicken'): 838, ('train', 'rice'): 457, ('train', 'potato'): 773, ('train', 'broccoli'): 689, ('train', 'beef'): 717, ('test', 'rice'): 1}
+  validation 200/1037 kept={('train', 'chicken'): 838, ('train', 'rice'): 457, ('train', 'potato'): 773, ('train', 'broccoli'): 689, ('train', 'beef'): 717, ('test', 'rice'): 40, ('test', 'chicken'): 67, ('test', 'beef'): 70, ('test', 'potato'): 57, ('test', 'broccoli'): 52}
+  validation 400/1037 kept={('train', 'chicken'): 838, ('train', 'rice'): 457, ('train', 'potato'): 773, ('train', 'broccoli'): 689, ('train', 'beef'): 717, ('test', 'rice'): 71, ('test', 'chicken'): 148, ('test', 'beef'): 136, ('test', 'potato'): 121, ('test', 'broccoli'): 104}
+  validation 600/1037 kept={('train', 'chicken'): 838, ('train', 'rice'): 457, ('train', 'potato'): 773, ('train', 'broccoli'): 689, ('train', 'beef'): 717, ('test', 'rice'): 117, ('test', 'chicken'): 227, ('test', 'beef'): 210, ('test', 'potato'): 170, ('test', 'broccoli'): 163}
+  validation 800/1037 kept={('train', 'chicken'): 838, ('train', 'rice'): 457, ('train', 'potato'): 773, ('train', 'broccoli'): 689, ('train', 'beef'): 717, ('test', 'rice'): 157, ('test', 'chicken'): 302, ('test', 'beef'): 277, ('test', 'potato'): 244, ('test', 'broccoli'): 214}
+  validation 1000/1037 kept={('train', 'chicken'): 838, ('train', 'rice'): 457, ('train', 'potato'): 773, ('train', 'broccoli'): 689, ('train', 'beef'): 717, ('test', 'rice'): 192, ('test', 'chicken'): 373, ('test', 'beef'): 326, ('test', 'potato'): 297, ('test', 'broccoli'): 292}
+
+====================================================================
+FOODSEG103 INGEST COMPLETE
+====================================================================
+class       train img  test img  train cut  test cut
+--------------------------------------------------------------------
+beef              728       337        717       332
+broccoli          704       309        689       297
+chicken           848       394        838       388
+potato            785       306        773       300
+rice              464       206        457       205
+--------------------------------------------------------------------
+rejected: {'potato:too_small': 14, 'beef:too_small': 12, 'rice:too_small': 5, 'chicken:too_sparse': 9, 'rice:too_sparse': 3, 'broccoli:too_small': 23, 'chicken:too_small': 7, 'potato:too_sparse': 4, 'beef:too_sparse': 4, 'broccoli:too_sparse': 4}
+
+Area diagnostics (does the A2 formula carry portion signal?)
+  beef       share_of_food median=0.344 | >0.9 in 0.5% of images | share_of_image median=0.175
+  broccoli   share_of_food median=0.206 | >0.9 in 0.2% of images | share_of_image median=0.113
+  chicken    share_of_food median=0.392 | >0.9 in 0.4% of images | share_of_image median=0.202
+  potato     share_of_food median=0.247 | >0.9 in 0.0% of images | share_of_image median=0.129
+  rice       share_of_food median=0.260 | >0.9 in 0.0% of images | share_of_image median=0.141
+
+wrote /Users/lukevalerio/Documents/TinyML/FinalProject/results/foodseg103_counts.json
